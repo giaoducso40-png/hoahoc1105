@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.18",
+  "reviewStatus": "chemistry-reviewed",
+  "sourceDocument": "sources/Dan_xuat_hydrocarbon_lop_11.docx",
+  "modules": {
+    "halogen": {
+      "id": "halogen",
+      "title": "Dẫn xuất halogen",
+      "objectives": ["Nhận diện liên kết C–X", "Gọi tên dẫn xuất halogen", "Phân biệt phản ứng thế và phản ứng tách"],
+      "prerequisites": ["Cấu tạo hydrocarbon", "Danh pháp hydrocarbon"],
+      "conceptBlocks": [
+        {"title": "Khái niệm", "text": "Dẫn xuất halogen hình thành khi thay một hoặc nhiều nguyên tử hydrogen trong hydrocarbon bằng nguyên tử halogen."},
+        {"title": "Phản ứng đặc trưng", "text": "Alkyl halide phản ứng với kiềm nước theo hướng thế tạo alcohol. KOH trong ethanol khi đun nóng ưu tiên tách hydrogen halide tạo alkene."}
+      ],
+      "reactions": [
+        {"id": "HAL-SUB", "equation": "R–X + NaOH → R–OH + NaX", "condition": "Dung dịch, đun nóng", "phenomenon": "Không có dấu hiệu màu chung; xác định sản phẩm bằng phép thử phù hợp.", "conclusion": "Kiềm nước ưu tiên phản ứng thế."},
+        {"id": "HAL-ELIM", "equation": "R–CH₂–CH₂–X + KOH → R–CH=CH₂ + KX + H₂O", "condition": "KOH trong ethanol, đun nóng", "phenomenon": "Nếu sản phẩm là alkene khí, khí thoát qua đường dẫn được bố trí đúng.", "conclusion": "Kiềm trong ethanol và nhiệt ưu tiên phản ứng tách."}
+      ],
+      "misconceptions": ["Không coi chlorobenzene và vinyl chloride phản ứng giống alkyl halide trong điều kiện thường.", "Không kết luận cả hai môi trường đều tạo alcohol."],
+      "safetyNotes": ["KOH ăn mòn; ethanol dễ cháy; chỉ đun cách thủy trong mô phỏng."],
+      "relatedLabs": ["substitution"]
+    },
+    "alcohol": {
+      "id": "alcohol",
+      "title": "Alcohol",
+      "objectives": ["Nhận diện nhóm hydroxy gắn với carbon no", "Giải thích liên kết hydrogen", "Dự đoán sản phẩm oxi hóa alcohol"],
+      "prerequisites": ["Liên kết cộng hóa trị phân cực", "Bậc của nguyên tử carbon"],
+      "conceptBlocks": [
+        {"title": "Khái niệm", "text": "Alcohol là hợp chất hữu cơ có nhóm –OH liên kết trực tiếp với nguyên tử carbon no."},
+        {"title": "Oxi hóa bằng CuO", "text": "Alcohol bậc I tạo aldehyde, alcohol bậc II tạo ketone; alcohol bậc III không phản ứng trong điều kiện đang xét."}
+      ],
+      "reactions": [
+        {"id": "ALC-CUO-1", "equation": "2Cu + O₂ → 2CuO", "condition": "Nung trong không khí", "phenomenon": "Dây đồng đỏ phủ lớp CuO màu đen.", "conclusion": "Đồng bị oxi hóa thành copper(II) oxide."},
+        {"id": "ALC-CUO-2", "equation": "CH₃CH₂OH + CuO → CH₃CHO + Cu + H₂O", "condition": "Dây CuO còn nóng", "phenomenon": "Lớp đen giảm dần, màu đỏ đồng xuất hiện trở lại.", "conclusion": "Ethanol bị oxi hóa thành ethanal."}
+      ],
+      "misconceptions": ["Không gọi phenol là alcohol thơm.", "Không mô phỏng toàn bộ chất lỏng chuyển đen khi chỉ bề mặt dây tạo CuO."],
+      "safetyNotes": ["Alcohol dễ cháy; dây đồng nóng; không ngửi trực tiếp sản phẩm."],
+      "relatedLabs": ["cuo"]
+    },
+    "phenol": {
+      "id": "phenol",
+      "title": "Phenol",
+      "objectives": ["Phân biệt phenol với alcohol thơm", "Giải thích tính acid yếu", "Nhận biết phenol bằng nước bromine"],
+      "prerequisites": ["Cấu tạo vòng benzene", "Phản ứng thế trên vòng thơm"],
+      "conceptBlocks": [
+        {"title": "Khái niệm", "text": "Phenol có nhóm –OH liên kết trực tiếp với nguyên tử carbon của vòng benzene."},
+        {"title": "Ảnh hưởng của nhóm –OH", "text": "Nhóm –OH hoạt hóa vòng benzene, làm phản ứng thế bromine xảy ra dễ tại các vị trí 2, 4 và 6."}
+      ],
+      "reactions": [
+        {"id": "PHE-BR", "equation": "C₆H₅OH + 3Br₂ → C₆H₂Br₃OH↓ + 3HBr", "condition": "Nước bromine, nhiệt độ thường", "phenomenon": "Màu vàng nâu mất dần, đồng thời xuất hiện kết tủa trắng.", "conclusion": "Sản phẩm là 2,4,6-tribromophenol."}
+      ],
+      "misconceptions": ["Phenol không tan vô hạn trong nước.", "Phenol phản ứng với NaOH nhưng không phản ứng với NaHCO₃ trong phạm vi kiến thức lớp 11."],
+      "safetyNotes": ["Phenol độc, gây bỏng; bromine độc và ăn mòn; chỉ quan sát mô phỏng."],
+      "relatedLabs": ["phenol-bromine"]
+    },
+    "carbonyl": {
+      "id": "carbonyl",
+      "title": "Hợp chất carbonyl",
+      "objectives": ["Phân biệt aldehyde và ketone", "Đọc tín hiệu nhóm C=O", "Giải thích phản ứng Tollens"],
+      "prerequisites": ["Nhóm chức", "Phản ứng oxi hóa – khử"],
+      "conceptBlocks": [
+        {"title": "Phân loại", "text": "Aldehyde có nhóm –CHO; ketone có nhóm >C=O liên kết với hai gốc hydrocarbon."},
+        {"title": "Nhận biết", "text": "Aldehyde phản ứng với thuốc thử Tollens tạo bạc kim loại; ketone thông thường không cho phản ứng này."}
+      ],
+      "reactions": [
+        {"id": "CAR-TOLLENS", "equation": "R–CHO + 2[Ag(NH₃)₂]OH → R–COONH₄ + 2Ag↓ + 3NH₃ + H₂O", "condition": "Thuốc thử mới pha, làm ấm cách thủy", "phenomenon": "Bạc kim loại bám dần trên mặt trong thành ống nghiệm sạch.", "conclusion": "Dùng để phân biệt aldehyde với ketone thông thường."}
+      ],
+      "misconceptions": ["Không khẳng định mọi hợp chất có C=O đều cho phản ứng tráng bạc.", "Không đun trực tiếp thuốc thử Tollens bằng ngọn lửa."],
+      "safetyNotes": ["Tollens phải mới pha, dùng ngay và không để khô cặn."],
+      "relatedLabs": ["tollens"]
+    },
+    "acid": {
+      "id": "acid",
+      "title": "Carboxylic acid",
+      "objectives": ["Nhận diện nhóm –COOH", "Giải thích tính acid", "Mô tả phản ứng ester hóa"],
+      "prerequisites": ["Nhóm carbonyl", "Cân bằng hóa học"],
+      "conceptBlocks": [
+        {"title": "Khái niệm", "text": "Carboxylic acid có nhóm carboxyl –COOH liên kết với nguyên tử carbon hoặc hydrogen."},
+        {"title": "Ester hóa", "text": "Carboxylic acid phản ứng thuận nghịch với alcohol tạo ester và nước; acid sulfuric đặc đóng vai trò xúc tác và hỗ trợ hút nước."}
+      ],
+      "reactions": [
+        {"id": "ACI-HCO3", "equation": "CH₃COOH + NaHCO₃ → CH₃COONa + CO₂↑ + H₂O", "condition": "Dung dịch", "phenomenon": "Bọt CO₂ sinh ra tại vùng tiếp xúc và giảm dần khi chất phản ứng cạn.", "conclusion": "Carboxylic acid phản ứng với hydrogencarbonate giải phóng CO₂."},
+        {"id": "ACI-ESTER", "equation": "CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O", "condition": "H₂SO₄ đặc, đun cách thủy", "phenomenon": "Sau khi xử lý bằng dung dịch NaCl bão hòa, hai lớp chất lỏng tách dần; lớp ester nằm trên.", "conclusion": "Phản ứng ester hóa là thuận nghịch; đổi màu không chứng minh ester đã tạo thành."}
+      ],
+      "misconceptions": ["Không dùng đổi màu làm dấu hiệu tạo ester.", "Không bịt kín hệ sinh CO₂."],
+      "safetyNotes": ["H₂SO₄ đặc ăn mòn mạnh; ethanol và ester dễ cháy; không ngửi trực tiếp sản phẩm."],
+      "relatedLabs": ["carbonate", "esterification"]
+    }
+  }
+}

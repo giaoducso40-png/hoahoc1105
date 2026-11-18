@@ -1,0 +1,120 @@
+/* Lab Tollens V6: hai ong nghiem doi chung trong cung mot be nuoc am.
+   Bac chi bam thanh trong ong ethanal; ong propanone giu nguyen. */
+.lab-tollens .lab-workspace{overflow:hidden}
+.lab-tollens .lab-stage{
+ background:
+  linear-gradient(rgba(255,255,255,.34) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.34) 1px,transparent 1px),
+  radial-gradient(circle at 50% 22%,#fff 0,#eef8f6 58%,#dcece8 100%);
+ background-size:34px 34px,34px 34px,auto;
+}
+
+/* Khong de nhan ong, nhan be va chu thich cham nhau. */
+.lab-tollens .scene-tollens .mq-diagram{
+ inset:2% 5% 12%;
+ width:90%;
+ height:86%;
+ overflow:visible;
+ filter:drop-shadow(0 13px 12px rgba(32,72,65,.09));
+}
+.lab-tollens .scene-tollens .mq-diagram text{
+ font-family:"Inter","Segoe UI",Arial,sans-serif;
+ font-weight:800;
+ paint-order:stroke;
+ stroke:rgba(255,255,255,.94);
+ stroke-width:4px;
+ stroke-linejoin:round;
+}
+.lab-tollens .scene-tollens .mq-diagram .tag{font-size:15px;fill:#183f38}
+.lab-tollens .scene-tollens .mq-diagram .chemical-label{font-size:15px;fill:#174c40}
+
+/* Be cach thuy la mot khay mo, muc nuoc nam thap hon mieng ong nghiem. */
+.lab-tollens .scene-tollens .warm-bath .glass{
+ fill:rgba(255,255,255,.18);
+ stroke:#759d98;
+ stroke-width:5;
+ stroke-linecap:round;
+ stroke-linejoin:round;
+}
+.lab-tollens .scene-tollens .warm-bath .water{
+ fill:rgba(121,203,207,.34);
+ stroke:#61a5a5;
+ stroke-width:2.5;
+}
+.lab-tollens .scene-tollens .warm-bath text{font-size:14px;fill:#25564e}
+
+/* Ong nghiem trong, co thanh kinh va meniscus; dung dich khong phai mot khoi bac. */
+.lab-tollens .scene-tollens .tollens-tube .glass{
+ fill:rgba(255,255,255,.23);
+ stroke:#789b97;
+ stroke-width:6;
+ stroke-linecap:round;
+ stroke-linejoin:round;
+}
+.lab-tollens .scene-tollens .tollens-tube .sample-liquid{
+ fill:rgba(213,235,235,.64);
+ stroke:rgba(114,167,165,.42);
+ stroke-width:1.5;
+}
+.lab-tollens .scene-tollens .tube-b .sample-liquid{fill:rgba(220,239,238,.58)}
+
+/* Mam bac xuat hien truoc tren mat trong ong A. */
+.lab-tollens .scene-tollens .silver-seeds{opacity:0;transition:opacity .35s ease}
+.lab-tollens .scene-tollens .silver-seeds circle{
+ fill:#eef3f4;
+ stroke:#8d9ca2;
+ stroke-width:2;
+ filter:drop-shadow(0 0 3px rgba(255,255,255,.95));
+ transform-box:fill-box;
+ transform-origin:center;
+}
+
+/* Lop trang bac la mot mang mong bam theo duong cong ben trong ong A. */
+.lab-tollens .scene-tollens .silver-coat{
+ fill:none;
+ stroke:#c3cdd1;
+ stroke-width:14;
+ stroke-linecap:round;
+ stroke-linejoin:round;
+ stroke-dasharray:510;
+ stroke-dashoffset:510;
+ opacity:0;
+ filter:drop-shadow(0 0 5px rgba(255,255,255,.98)) drop-shadow(0 1px 1px rgba(89,106,113,.35));
+ transition:stroke-dashoffset 1.65s ease,opacity .45s ease;
+}
+.lab-tollens .scene-tollens.phase-silver-growing .silver-seeds{opacity:1}
+.lab-tollens .scene-tollens.phase-silver-growing .silver-seeds circle{animation:tollensSeed 1.05s ease-in-out infinite alternate}
+.lab-tollens .scene-tollens.phase-silver-growing .silver-coat{opacity:.72;stroke-dashoffset:176}
+.lab-tollens .scene-tollens.phase-silver-complete .silver-seeds{opacity:.45}
+.lab-tollens .scene-tollens.phase-silver-complete .silver-coat{opacity:1;stroke-dashoffset:0}
+
+/* Ong B tuyet doi khong co mang bac hay hat bac o moi trang thai. */
+.lab-tollens .scene-tollens .tube-b{filter:none}
+.lab-tollens .scene-tollens.phase-silver-growing .tube-b .sample-liquid,
+.lab-tollens .scene-tollens.phase-silver-complete .tube-b .sample-liquid{fill:rgba(220,239,238,.58)}
+
+.lab-tollens .scene-caption{max-width:min(820px,84%);margin-inline:auto}
+.lab-tollens .lab-guide p{word-break:normal;overflow-wrap:normal;hyphens:none;text-align:left}
+.lab-tollens .lab-controls button{white-space:nowrap}
+
+@keyframes tollensSeed{
+ from{opacity:.42;transform:scale(.76)}
+ to{opacity:1;transform:scale(1.18)}
+}
+
+@media(max-height:800px) and (min-width:1051px){
+ .lab-tollens .scene-tollens .mq-diagram{inset:0 5% 10%;height:90%}
+ .lab-tollens .scene-caption{bottom:1%}
+}
+@media(max-width:820px){
+ .lab-tollens .scene-tollens .mq-diagram{inset:2% 2% 13%;width:96%;height:85%}
+ .lab-tollens .scene-caption{max-width:92%}
+}
+@media(max-width:520px){
+ .lab-tollens .scene-tollens .mq-diagram{inset:3% 0 15%;width:100%;height:82%}
+ .lab-tollens .scene-tollens .mq-diagram .tag{font-size:16px}
+ .lab-tollens .scene-tollens .mq-diagram .chemical-label{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .lab-tollens .scene-tollens.phase-silver-growing .silver-seeds circle{animation:none}
+}

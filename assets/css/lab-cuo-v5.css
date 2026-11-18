@@ -1,0 +1,177 @@
+/* Lab Alcohol - CuO: dung cu 2D dung bo tri, den con ro rang, mau chi doi tren day dong. */
+.lab-cuo,.lab-cuo *{box-sizing:border-box}
+.lab-cuo{overflow:hidden}
+.lab-cuo .lab-workspace,.lab-cuo .lab-stage{overflow:hidden}
+.lab-cuo .lab-stage{isolation:isolate}
+.lab-cuo .lab-guide{overflow:hidden}
+.lab-cuo .lab-guide-content{overflow:visible}
+.lab-cuo .lab-instruction,
+.lab-cuo .lab-observation p,
+.lab-cuo .lab-objective,
+.lab-cuo .lab-warning{
+ text-align:left;
+ word-break:normal;
+ overflow-wrap:break-word;
+ hyphens:none;
+ text-wrap:pretty
+}
+.lab-cuo .lab-controls button,.lab-cuo .prediction label{text-align:left;word-break:normal;hyphens:none}
+.lab-cuo .lab-controls .primary-button{text-align:center;white-space:nowrap}
+
+/* Toan bo chu trong hinh dung cung font voi giao dien, tranh loi glyph tieng Viet. */
+.lab-cuo .scene-cuo .mq-diagram text{
+ font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;
+ paint-order:stroke;
+ stroke:rgba(248,252,250,.9);
+ stroke-width:3px;
+ stroke-linejoin:round
+}
+.lab-cuo .scene-cuo .mq-diagram .wire-note,
+.lab-cuo .scene-cuo .mq-diagram .tag{font-size:14px;font-weight:850}
+.lab-cuo .scene-cuo .mq-diagram .result-note{font-size:15px;fill:#8f3d28}
+
+/* Chuyen den con vao ngay ben duoi doan day dang nung. */
+.lab-cuo .scene-cuo .burner{
+ transform:translateX(-138px);
+ transform-box:view-box;
+ transform-origin:center;
+ filter:drop-shadow(0 6px 5px rgba(46,72,67,.14))
+}
+
+/* Than den con: binh thuy tinh day, phan than co mau con nhat; khong con hinh tru giong cay nen. */
+.lab-cuo .scene-cuo .burner path:not(.flame-svg){
+ fill:rgba(219,239,240,.92);
+ stroke:#647f80;
+ stroke-width:5;
+ stroke-linecap:round;
+ stroke-linejoin:round
+}
+.lab-cuo .scene-cuo .burner .wick-svg{
+ fill:none;
+ stroke:#363a37;
+ stroke-width:6;
+ stroke-linecap:round
+}
+.lab-cuo .scene-cuo .burner ellipse{
+ fill:#d4e9e8;
+ stroke:#647f80;
+ stroke-width:5
+}
+.lab-cuo .scene-cuo .burner .flame-svg{
+ fill:#ffb14f;
+ stroke:#ed6f34;
+ stroke-width:3;
+ opacity:0;
+ transform-origin:420px 259px;
+ filter:drop-shadow(0 0 7px rgba(244,127,48,.55))
+}
+
+/* Nhan dung cu va tim den nam ngoai vung phan ung, khong de len day dong hay ong nghiem. */
+.lab-cuo .scene-cuo::before{
+ content:"Đèn cồn";
+ position:absolute;
+ z-index:8;
+ left:38.8%;
+ top:72%;
+ transform:translateX(-50%);
+ padding:4px 8px;
+ border-radius:999px;
+ background:rgba(255,255,255,.94);
+ color:#355c53;
+ font-size:.72rem;
+ font-weight:850;
+ line-height:1;
+ box-shadow:0 4px 10px rgba(28,62,56,.1);
+ pointer-events:none
+}
+.lab-cuo .scene-cuo::after{
+ content:"";
+ position:absolute;
+ z-index:7;
+ left:38.8%;
+ top:54.8%;
+ width:8px;
+ height:18px;
+ transform:translateX(-50%);
+ border-radius:4px 4px 1px 1px;
+ background:#383b38;
+ box-shadow:0 0 0 3px #899c98;
+ pointer-events:none
+}
+
+/* Day dong sach va lop CuO la hai net trung nhau: lop den chi hien tren be mat day. */
+.lab-cuo .scene-cuo .wire-copper{
+ fill:none;
+ stroke:#b95635;
+ stroke-width:12;
+ stroke-linecap:round;
+ filter:drop-shadow(0 2px 1px rgba(76,43,32,.22));
+ transition:opacity .55s ease
+}
+.lab-cuo .scene-cuo .wire-black{
+ fill:none;
+ stroke:#202524;
+ stroke-width:13;
+ stroke-linecap:round;
+ stroke-dasharray:190;
+ stroke-dashoffset:190;
+ opacity:0;
+ filter:drop-shadow(0 2px 1px rgba(20,28,26,.2));
+ transition:stroke-dashoffset 1.2s ease,opacity .55s ease
+}
+.lab-cuo .scene-cuo .wire-tip{fill:#b95635;stroke:#873b27;stroke-width:3}
+
+/* Buoc 1: chi bat ngon lua den con va phu CuO tren doan day nam tren lua. */
+.lab-cuo .scene-cuo.phase-black-cuo .burner .flame-svg{
+ opacity:1;
+ animation:cuoAlcoholFlame .7s ease-in-out infinite alternate
+}
+.lab-cuo .scene-cuo.phase-black-cuo .wire-black{opacity:1;stroke-dashoffset:0}
+
+/* Buoc 2-4: day roi den con, ha phan boc CuO vao dung dich. */
+.lab-cuo .scene-cuo.phase-immersed-cuo .burner .flame-svg,
+.lab-cuo .scene-cuo.phase-copper-restored .burner .flame-svg,
+.lab-cuo .scene-cuo.phase-cuo-concluded .burner .flame-svg{opacity:0;animation:none}
+.lab-cuo .scene-cuo.phase-immersed-cuo .copper-wire,
+.lab-cuo .scene-cuo.phase-copper-restored .copper-wire,
+.lab-cuo .scene-cuo.phase-cuo-concluded .copper-wire{
+ transform:translate(-55px,96px) rotate(-18deg);
+ transform-origin:366px 128px;
+ transition:transform .8s cubic-bezier(.2,.75,.2,1)
+}
+.lab-cuo .scene-cuo.phase-immersed-cuo .wire-black{opacity:1;stroke-dashoffset:0}
+.lab-cuo .scene-cuo.phase-copper-restored .wire-black{
+ opacity:.12;
+ stroke-dashoffset:150;
+ transition:stroke-dashoffset 1.5s ease,opacity 1.4s ease
+}
+.lab-cuo .scene-cuo.phase-cuo-concluded .wire-black{
+ opacity:0;
+ stroke-dashoffset:190;
+ transition:stroke-dashoffset 1.2s ease,opacity 1.2s ease
+}
+.lab-cuo .scene-cuo.phase-copper-restored .result-note,
+.lab-cuo .scene-cuo.phase-cuo-concluded .result-note{opacity:1}
+
+@keyframes cuoAlcoholFlame{
+ from{transform:scale(.94,1);filter:brightness(1) drop-shadow(0 0 6px rgba(244,127,48,.5))}
+ to{transform:scale(.84,1.1);filter:brightness(1.12) drop-shadow(0 0 10px rgba(244,127,48,.72))}
+}
+
+@media(max-height:820px) and (min-width:1051px){
+ .lab-cuo .lab-head{padding-top:7px;padding-bottom:7px}
+ .lab-cuo .lab-workspace{height:calc(100dvh - 218px);min-height:420px}
+ .lab-cuo .scene-caption{padding:7px 11px}
+}
+@media(max-width:1050px){
+ .lab-cuo .lab-workspace,.lab-cuo .lab-guide{overflow:visible}
+ .lab-cuo .scene-cuo::before{top:73%}
+}
+@media(max-width:520px){
+ .lab-cuo .scene-cuo::before{left:38.5%;top:72%;font-size:.65rem}
+ .lab-cuo .scene-cuo::after{left:38.5%;top:54%;width:7px;height:15px}
+ .lab-cuo .scene-cuo .mq-diagram .result-note{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+ .lab-cuo .scene-cuo *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}

@@ -1,0 +1,54 @@
+/* Nội dung V4: một vùng cuộn, sơ đồ phản ứng nguyên khối, chữ không bị cắt giữa cụm nghĩa. */
+html,body{overflow-x:hidden}
+.question-dialog{display:none;width:min(920px,calc(100vw - 32px));max-height:calc(100dvh - 24px);padding:20px 24px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;grid-template-rows:none}
+.question-dialog[open]{display:block}
+.question-dialog .dialog-head{position:sticky;z-index:4;top:-20px;margin:-20px -24px 10px;padding:18px 24px 12px;background:rgba(255,255,255,.98);backdrop-filter:blur(10px)}
+.question-dialog .question-media{display:block;max-height:none;overflow:visible;margin:8px 0}
+.question-dialog .question-media[hidden]{display:none}
+.question-dialog .question-stem{margin:10px 0 12px;text-align:justify;text-align-last:left;word-break:normal;overflow-wrap:normal;hyphens:none;text-wrap:pretty}
+.question-dialog .option-list{display:grid;gap:9px;min-height:0;overflow:visible;padding:0}
+.question-dialog .option-card{grid-template-columns:42px minmax(0,1fr);align-items:center;min-height:60px;padding:10px 12px;text-align:left;word-break:normal;overflow-wrap:normal;hyphens:none}
+.question-dialog .option-content{display:grid;align-items:center;min-width:0;gap:6px}
+.question-dialog .option-text{font:600 clamp(.94rem,1.2vw,1.08rem)/1.48 "Segoe UI","Noto Sans","DejaVu Sans",Arial,sans-serif;letter-spacing:0;white-space:normal;text-align:left}
+.question-dialog .option-image{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden}
+.question-dialog .option-image img,.question-source-image{display:block;width:auto;max-width:100%;height:auto;max-height:150px;object-fit:contain;margin:6px auto}
+.question-dialog .feedback{margin:10px 0;text-align:justify;text-align-last:left}
+.question-dialog .dialog-actions{position:sticky;z-index:5;bottom:-20px;margin:12px -24px -20px;padding:12px 24px 18px;border-top:1px solid var(--line);background:rgba(255,255,255,.98);backdrop-filter:blur(10px)}
+.question-dialog .dialog-actions button{white-space:nowrap;text-align:center}
+
+.reaction-sequence{display:grid;grid-template-columns:minmax(90px,1fr) minmax(54px,.55fr) minmax(120px,1.35fr) minmax(54px,.55fr) minmax(132px,1.5fr) minmax(54px,.55fr) minmax(125px,1.4fr);align-items:center;gap:6px;width:100%;padding:14px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#fbfdfd,#f1f8f5);font-family:"Cambria Math","Times New Roman",serif}
+.reaction-node{display:grid;place-items:center;min-height:58px;padding:8px 7px;border:1px solid #d9e8e3;border-radius:12px;background:#fff;font-size:clamp(.68rem,1.25vw,.95rem);font-weight:700;line-height:1.25;white-space:nowrap;text-align:center}
+.reaction-arrow{display:grid;place-items:center;min-width:0;color:var(--brand-dark);text-align:center}
+.reaction-arrow small{display:block;min-height:2.5em;font:700 clamp(.52rem,.88vw,.68rem)/1.15 system-ui,sans-serif;text-wrap:balance}
+.reaction-arrow b{display:block;font-size:clamp(1.2rem,2.3vw,1.8rem);line-height:1}
+
+.theory-main p,.theory-main li,.reaction-card dd,.mindmap-image-card header>p{text-align:justify;text-align-last:left;word-break:normal;overflow-wrap:normal;hyphens:none;text-wrap:pretty}
+.learning-objectives{margin:16px 0;padding:14px 16px;border-left:4px solid var(--brand);border-radius:0 14px 14px 0;background:#eff8f5}
+.learning-objectives h3,.concept-grid h3{margin:0 0 6px}
+.learning-objectives ul,.misconception-list ul,.safety-list ul{margin:6px 0;padding-left:20px}
+.concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+.concept-grid section{padding:14px 16px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.concept-grid p{margin:0;line-height:1.62}
+.reaction-list{display:grid;gap:12px}
+.reaction-card{padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.reaction-equation{overflow:hidden;padding:11px 12px;border-radius:12px;background:#f3f8f6;font:700 clamp(.78rem,1.3vw,1.05rem)/1.5 "Cambria Math","Times New Roman",serif;white-space:normal;word-break:normal;overflow-wrap:normal;text-wrap:balance;text-align:center}
+.reaction-card dl{display:grid;gap:7px;margin:12px 0 0}
+.reaction-card dl>div{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px}
+.reaction-card dt{font-weight:850;color:var(--brand-dark)}
+.reaction-card dd{margin:0;line-height:1.5}
+.misconception-list,.safety-list{margin-top:16px;padding:14px 16px;border-radius:15px}
+.misconception-list{background:#fff6e8}.safety-list{background:#fff0ee}
+.misconception-list h3,.safety-list h3{margin:0 0 6px}
+.theory-actions button,.topic-tabs button{white-space:nowrap;text-align:center}
+.theory-side .key-card b,.theory-side .key-card span{display:block}.theory-side .key-card span{margin-top:5px;line-height:1.5}
+
+@media(max-width:700px){
+ .question-dialog{width:calc(100vw - 14px);max-height:calc(100dvh - 14px);padding:14px}
+ .question-dialog .dialog-head{top:-14px;margin:-14px -14px 8px;padding:14px}
+ .question-dialog .dialog-actions{bottom:-14px;margin:10px -14px -14px;padding:10px 14px 14px}
+ .reaction-sequence{grid-template-columns:1fr;gap:4px;padding:10px}
+ .reaction-arrow small{min-height:0}.reaction-arrow b{transform:rotate(90deg);margin:2px 0}
+ .reaction-node{min-height:46px;font-size:.78rem}
+ .concept-grid{grid-template-columns:1fr}
+ .reaction-card dl>div{grid-template-columns:1fr;gap:2px}
+}

@@ -1,0 +1,2010 @@
+[
+  {
+    "id": "halogen-1",
+    "topic": "halogen",
+    "sourceQuestionNumber": 1,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất thuộc loại dẫn xuất halogen của hydrocarbon là",
+    "options": [
+      {
+        "id": "A",
+        "text": "HIO₄"
+      },
+      {
+        "id": "B",
+        "text": "C₃H₃N"
+      },
+      {
+        "id": "C",
+        "text": "CH₂BrCl"
+      },
+      {
+        "id": "D",
+        "text": "C₆H₆O"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: CH₂BrCl. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-2",
+    "topic": "halogen",
+    "sourceQuestionNumber": 2,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất thuộc loại dẫn xuất halogen của hydrocarbon là",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₂H₇N"
+      },
+      {
+        "id": "B",
+        "text": "C₂H₆O"
+      },
+      {
+        "id": "C",
+        "text": "CH₄"
+      },
+      {
+        "id": "D",
+        "text": "C₆H₅Br"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: C₆H₅Br. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-3",
+    "topic": "halogen",
+    "sourceQuestionNumber": 3,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Chất nào sau đây không phải dẫn xuất halogen của hydrocarbon?",
+    "options": [
+      {
+        "id": "A",
+        "text": "",
+        "image": "assets/reference/vector-image8.png"
+      },
+      {
+        "id": "B",
+        "text": "",
+        "image": "assets/reference/vector-image9.png"
+      },
+      {
+        "id": "C",
+        "text": "",
+        "image": "assets/reference/vector-image10.png"
+      },
+      {
+        "id": "D",
+        "text": "",
+        "image": "assets/reference/vector-image11.png"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: cấu trúc/phương án tương ứng trong hình. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-4",
+    "topic": "halogen",
+    "sourceQuestionNumber": 4,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Dẫn xuất halogen nào sau đây có đồng phân hình học?",
+    "options": [
+      {
+        "id": "A",
+        "text": "",
+        "image": "assets/reference/vector-image12.png"
+      },
+      {
+        "id": "B",
+        "text": "",
+        "image": "assets/reference/vector-image13.png"
+      },
+      {
+        "id": "C",
+        "text": "",
+        "image": "assets/reference/vector-image14.png"
+      },
+      {
+        "id": "D",
+        "text": "",
+        "image": "assets/reference/vector-image15.png"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: cấu trúc/phương án tương ứng trong hình. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-5",
+    "topic": "halogen",
+    "sourceQuestionNumber": 5,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Số công thức cấu tạo của C₄H₇Cl có đồng phân hình học là",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 3. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-6",
+    "topic": "halogen",
+    "sourceQuestionNumber": 6,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Bậc của dẫn xuất halogen là bậc của nguyên tử carbon liên kết với nguyên tử halogen. Bậc của dẫn xuất halogen nào sau đây không phù hợp?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dẫn xuất halogen bậc I"
+      },
+      {
+        "id": "B",
+        "text": "Dẫn xuất halogen bậc II"
+      },
+      {
+        "id": "C",
+        "text": "Dẫn xuất halogen bậc III"
+      },
+      {
+        "id": "D",
+        "text": "Dẫn xuất halogen bậc IV"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: Dẫn xuất halogen bậc IV. Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": [
+      "assets/reference/vector-image16.png"
+    ]
+  },
+  {
+    "id": "halogen-7",
+    "topic": "halogen",
+    "sourceQuestionNumber": 7,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "Cho 5 chất: CH₃CH₂CH₂Cl (1); CH₂=CHCH₂Cl (2); C₆H₅Cl (3); CH₂=CHCl (4); C₆H₅CH₂Cl (5). Đun từng chất với dung dịch NaOH loãng, dư, sau đó gạn lấy lớp nước và acid hoá bằng dung dịch HNO₃, sau đó nhỏ vào đó dung dịch AgNO₃ thì các chất có xuất hiện kết tủa trắng là",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1), (3), (5)"
+      },
+      {
+        "id": "B",
+        "text": "(2), (3), (5)"
+      },
+      {
+        "id": "C",
+        "text": "(1), (2), (3), (5)"
+      },
+      {
+        "id": "D",
+        "text": "(1), (2), (5)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: (1), (2), (5). Cần xét đúng kiểu carbon liên kết với halogen và phân biệt kiềm nước (thế) với KOH/ethanol, đun nóng (tách).",
+    "media": []
+  },
+  {
+    "id": "halogen-8",
+    "reviewStatus": "verified",
+    "topic": "halogen",
+    "sourceQuestionNumber": 8,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "(A.11) Cho dãy chuyển hóa sau, trong đó X, Y, Z là các sản phẩm chính. Tên gọi của Y và Z lần lượt là",
+    "stimulus": {
+      "type": "reaction-sequence",
+      "ariaLabel": "Benzene phản ứng với ethylene có xúc tác và đun nóng tạo ethylbenzene; brom hóa dưới ánh sáng theo tỉ lệ một trên một tạo 1-bromo-1-phenylethane; tách hydrogen bromide bằng potassium hydroxide trong ethanol khi đun nóng tạo styrene.",
+      "nodes": [
+        "C₆H₆",
+        "C₆H₅CH₂CH₃ (X)",
+        "C₆H₅CHBrCH₃ (Y)",
+        "C₆H₅CH=CH₂ (Z)"
+      ],
+      "conditions": [
+        "+ C₂H₄, xúc tác, t°",
+        "Br₂, ánh sáng, 1:1",
+        "KOH/C₂H₅OH, t°"
+      ]
+    },
+    "options": [
+      {
+        "id": "A",
+        "text": "1-bromo-1-phenylethane và styrene"
+      },
+      {
+        "id": "B",
+        "text": "benzyl bromide và toluene"
+      },
+      {
+        "id": "C",
+        "text": "1-bromo-2-phenylethane và styrene"
+      },
+      {
+        "id": "D",
+        "text": "2-bromo-1-phenylbenzene và styrene"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Ethylbenzene brom hóa ở vị trí benzylic dưới ánh sáng tạo 1-bromo-1-phenylethane. Tách HBr bằng KOH trong ethanol khi đun nóng tạo styrene. Đáp án A.",
+    "media": []
+  },
+  {
+    "id": "halogen-9",
+    "reviewStatus": "verified",
+    "topic": "halogen",
+    "sourceQuestionNumber": 9,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "Cho các thí nghiệm: (a) Đun nóng C₆H₅CH₂Cl trong dung dịch NaOH (b) Đun nóng hỗn hợp CH₃CH₂CH₂Cl, KOH và C₂H₅OH (c) Đun nóng CH₃CH₂CH₂Cl trong dung dịch NaOH (d) Đun nóng hỗn hợp CH₃CHClCH=CH₂, KOH và C₂H₅OH. Có bao nhiêu thí nghiệm tạo sản phẩm chính là alcohol?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Hai thí nghiệm tạo alcohol là (a) và (c). KOH trong ethanol ưu tiên phản ứng tách; chlorobenzene không thủy phân trong điều kiện thường.",
+    "media": []
+  },
+  {
+    "id": "alcohol-1",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 1,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Alcohol là những hợp chất hữu cơ mà phân tử có chứa nhóm OH liên kết trực tiếp với",
+    "options": [
+      {
+        "id": "A",
+        "text": "nguyên tử carbon"
+      },
+      {
+        "id": "B",
+        "text": "nguyên tử carbon không no"
+      },
+      {
+        "id": "C",
+        "text": "nguyên tử carbon no"
+      },
+      {
+        "id": "D",
+        "text": "nguyên tử oxygen"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: nguyên tử carbon no. Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-2",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 2,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất nào sau đây không phải là alcohol?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₂=CH-OH"
+      },
+      {
+        "id": "B",
+        "text": "CH₃CH₂OH"
+      },
+      {
+        "id": "C",
+        "text": "CH₂=CH-CH₂OH"
+      },
+      {
+        "id": "D",
+        "text": "C₆H₅CH₂OH"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: CH₂=CH-OH. Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-3",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 3,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất nào sau đây không phải alcohol?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₃CH₂OH"
+      },
+      {
+        "id": "B",
+        "text": "(CH₃)₂CH-OH"
+      },
+      {
+        "id": "C",
+        "text": "C₆H₅OH (C₆H₅-: phenyl)"
+      },
+      {
+        "id": "D",
+        "text": "CH₂=CH-CH₂OH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: C₆H₅OH (C₆H₅-: phenyl). Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-4",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 4,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Trên phổ hồng ngoại (IR cho các tín hiệu ở các số sóng khác nhau. Cho biết tín hiệu nào đặc trưng của nhóm chức alcohol.",
+    "options": [
+      {
+        "id": "A",
+        "text": "",
+        "image": "assets/reference/image33.png"
+      },
+      {
+        "id": "B",
+        "text": "",
+        "image": "assets/reference/image34.png"
+      },
+      {
+        "id": "C",
+        "text": "",
+        "image": "assets/reference/image35.png"
+      },
+      {
+        "id": "D",
+        "text": "",
+        "image": "assets/reference/image36.png"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: cấu trúc/phương án tương ứng trong hình. Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-5",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 5,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Số đồng phân cấu tạo có công thức phân tử C₃H₈O và phổ hồng ngoại có tín hiệu hấp thụ trong vùng 3 650 – 3200 cm⁻¹ là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 2. Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-6",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 6,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Số đồng phân cấu tạo alcohol có công thức C₄H₉OH là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: 4. Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-7",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 7,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "(B.09) Cho các hợp chất: (a) HOCH₂-CH₂OH; (b) HOCH₂-CH₂-CH₂OH; (c) HOCH₂-CH(OH)-CH₂OH; (d) CH₃-CH(OH)-CH₂OH; (e) CH₃-CH₂OH; (f) CH₃-O-CH₂CH₃. Các chất đều tác dụng được với Na và Cu(OH)₂ là",
+    "options": [
+      {
+        "id": "A",
+        "text": "(c), (d), (f)"
+      },
+      {
+        "id": "B",
+        "text": "(a), (b), (c)"
+      },
+      {
+        "id": "C",
+        "text": "(a), (c), (d)"
+      },
+      {
+        "id": "D",
+        "text": "(c), (d), (e)"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: (a), (c), (d). Alcohol có –OH gắn trực tiếp với carbon no; tính chất phụ thuộc bậc alcohol, số nhóm –OH và khả năng tạo liên kết hydrogen.",
+    "media": []
+  },
+  {
+    "id": "alcohol-8",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 8,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "Cho các phát biểu sau: (a) Trong phân tử alcohol có nhóm -OH. (b) Ethyl alcohol dễ tan trong nước vì phân tử alcohol phân cực và alcohol có thể tạo liên kết hydrogen với phân tử nước (c) Hợp chất C₆H₅OH là alcohol thơm, đơn chức (d) Nhiệt độ sôi của CH₃-CH₂-CH₂OH cao hơn của CH₃-O-CH₂CH₃ (e) Có 5 alcohol đồng phân cấu tạo ứng với công thức phân tử C₄H₁₀O Số phát biểu đúng là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "3"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: 3. Alcohol có nhóm –OH gắn với carbon no; cần xét riêng từng cấu trúc thay vì chỉ đếm số nhóm –OH xuất hiện trong công thức.",
+    "media": []
+  },
+  {
+    "id": "alcohol-9",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 9,
+    "level": "Hiểu",
+    "type": "short",
+    "stem": "Saccharose là một loại đường phổ biến, được sản xuất chủ yếu từ cây mía. Dựa vào cấu trúc phân tử trong hình, saccharose có bao nhiêu nhóm chức alcohol?",
+    "options": [],
+    "answer": "8",
+    "explanation": "Phân tử saccharose trong hình có 8 nhóm –OH.",
+    "media": [
+      "assets/reference/image37.png"
+    ]
+  },
+  {
+    "id": "alcohol-10",
+    "topic": "alcohol",
+    "sourceQuestionNumber": 10,
+    "level": "Hiểu",
+    "type": "short",
+    "stem": "Có bao nhiêu hợp chất hữu cơ có công thức phân tử C₃H₈O phản ứng được với Na?",
+    "options": [],
+    "answer": "2",
+    "explanation": "Hai đồng phân alcohol là propan-1-ol và propan-2-ol; ether không phản ứng với Na theo cách này.",
+    "media": []
+  },
+  {
+    "id": "phenol-1",
+    "topic": "phenol",
+    "sourceQuestionNumber": 1,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Phenol là hợp chất hữu cơ, trong phân tử có",
+    "options": [
+      {
+        "id": "A",
+        "text": "nhóm –OH và vòng benzene"
+      },
+      {
+        "id": "B",
+        "text": "nhóm –OH liên kết trực tiếp với nguyên tử carbon của vòng benzene"
+      },
+      {
+        "id": "C",
+        "text": "nhóm –OH liên kết trực tiếp với nguyên tử carbon no"
+      },
+      {
+        "id": "D",
+        "text": "nhóm –OH liên kết trực tiếp với nguyên tử carbon no và có chứa vòng benzene"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: nhóm –OH liên kết trực tiếp với nguyên tử carbon của vòng benzene. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-2",
+    "topic": "phenol",
+    "sourceQuestionNumber": 2,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Phenol là hợp chất có chứa vòng benzene, công thức cấu tạo của phenol là (C₆H₅-: phenyl)",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₆H₅OH"
+      },
+      {
+        "id": "B",
+        "text": "C₆H₅CH₃"
+      },
+      {
+        "id": "C",
+        "text": "C₆H₅CH₂OH"
+      },
+      {
+        "id": "D",
+        "text": "C₆H₅NH₂"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: C₆H₅OH. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-3",
+    "topic": "phenol",
+    "sourceQuestionNumber": 3,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Trong các chất sau, chất nào thuộc loại phenol?",
+    "options": [
+      {
+        "id": "A",
+        "text": "",
+        "image": "assets/reference/image47.png"
+      },
+      {
+        "id": "B",
+        "text": "",
+        "image": "assets/reference/image48.png"
+      },
+      {
+        "id": "C",
+        "text": "",
+        "image": "assets/reference/image49.png"
+      },
+      {
+        "id": "D",
+        "text": "",
+        "image": "assets/reference/image50.png"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: cấu trúc/phương án tương ứng trong hình. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-4",
+    "topic": "phenol",
+    "sourceQuestionNumber": 4,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Cho các chất có cùng công thức phân tử C₇H₈O như hình. Số chất vừa phản ứng được với Na, vừa phản ứng được với dung dịch NaOH là bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: 3. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": [
+      "assets/reference/vector-image51.png"
+    ]
+  },
+  {
+    "id": "phenol-5",
+    "topic": "phenol",
+    "sourceQuestionNumber": 5,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "(C.11) Số hợp chất đồng phân cấu tạo của nhau có công thức phân tử C₈H₁₀O, trong phân tử có vòng benzene, tác dụng được với Na, không tác dụng được với NaOH là",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "7"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: 5. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-6",
+    "topic": "phenol",
+    "sourceQuestionNumber": 6,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Tính acid của alcohol, phenol và carbonic acid biến đổi theo thứ tự nào dưới đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "phenol > carbonic acid > alcohol"
+      },
+      {
+        "id": "B",
+        "text": "phenol > alcohol > carbonic acid"
+      },
+      {
+        "id": "C",
+        "text": "carbonic acid > phenol > alcohol"
+      },
+      {
+        "id": "D",
+        "text": "carbonic acid > alcohol > phenol"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: carbonic acid > phenol > alcohol. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-7",
+    "topic": "phenol",
+    "sourceQuestionNumber": 7,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "(MH.15) Cho dãy các dung dịch sau: NaOH, NaHCO₃, HCl, NaNO₃, Br₂. Số dung dịch trong dãy phản ứng được với phenol là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 2. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-8",
+    "topic": "phenol",
+    "sourceQuestionNumber": 8,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "(A.10) Trong số các phát biểu sau về phenol (C₆H₅OH): (1) Phenol tan ít trong nước nhưng tan nhiều trong dung dịch HCl. (2) Phenol có tính acid, dung dịch phenol không làm đổi màu quỳ tím. (3) Phenol dùng để sản xuất keo dán, chất diệt nấm mốc. (4) Phenol tham gia phản ứng thế brom và thế nitro dễ hơn benzene. Các phát biểu đúng là",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1), (2), (4)"
+      },
+      {
+        "id": "B",
+        "text": "(2), (3), (4)"
+      },
+      {
+        "id": "C",
+        "text": "(1), (2), (3)"
+      },
+      {
+        "id": "D",
+        "text": "(1), (3), (4)"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: (2), (3), (4). Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "phenol-9",
+    "reviewStatus": "needs-review",
+    "topic": "phenol",
+    "sourceQuestionNumber": 9,
+    "level": "Vận dụng",
+    "type": "single",
+    "stem": "Cho các phát biểu sau về phenol (C₆H₅OH): (a) Phenol là hợp chất hữu cơ trong phân tử có vòng benzene và nhóm –OH. (b) Do có nhóm –OH nên phenol tan vô hạn trong nước ở điều kiện thường tương tự ethanol. (c) Dung dịch phenol không làm đổi màu giấy quỳ tím, do đó phenol có tính acid yếu. (d) Phenol phản ứng được với dung dịch NaOH. (e) Phenol phản ứng được với Na₂CO₃ do có tính acid mạnh hơn nấc 2 của carbonic acid. (g) Phenol dễ tham gia phản ứng thế bromine và thế nitro hơn benzene do ảnh hưởng của nhóm –OH. Các phát biểu đúng là",
+    "options": [
+      {
+        "id": "A",
+        "text": "a, b, c, d"
+      },
+      {
+        "id": "B",
+        "text": "a, c, d, g"
+      },
+      {
+        "id": "C",
+        "text": "b, c, d, e"
+      },
+      {
+        "id": "D",
+        "text": "c, d, e, g"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: c, d, e, g. Phenol có –OH gắn trực tiếp với vòng benzene, phản ứng với NaOH và thế bromine dễ hơn benzene.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-1",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 1,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất chứa nhóm C=O liên kết với nguyên tử carbon hoặc nguyên tử hydrogen được gọi là",
+    "options": [
+      {
+        "id": "A",
+        "text": "hợp chất alcohol"
+      },
+      {
+        "id": "B",
+        "text": "dẫn xuất halogen"
+      },
+      {
+        "id": "C",
+        "text": "các hợp chất phenol"
+      },
+      {
+        "id": "D",
+        "text": "hợp chất carbonyl"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: hợp chất carbonyl. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-2",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 2,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Trong những cặp chất sau đây, cặp chất nào thuộc loại hợp chất carbonyl?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₃OH, C₂H₅OH"
+      },
+      {
+        "id": "B",
+        "text": "C₆H₅OH, C₆H₅CH₂OH"
+      },
+      {
+        "id": "C",
+        "text": "CH₃CHO, CH₃OCH₃"
+      },
+      {
+        "id": "D",
+        "text": "CH₃CHO, CH₃COCH₃"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: CH₃CHO, CH₃COCH₃. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-3",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 3,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Công thức tổng quát của hợp chất carbonyl no, đơn chức mạch hở là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CₙH₂ₙO"
+      },
+      {
+        "id": "B",
+        "text": "CₙH₂ₙ₊₂O₂"
+      },
+      {
+        "id": "C",
+        "text": "CₙH₂ₙ₋₂O"
+      },
+      {
+        "id": "D",
+        "text": "CₙH₂ₙ₋₄O"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: CₙH₂ₙO. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-4",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 4,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Aldehyde là hợp chất hữu cơ trong phân tử có",
+    "options": [
+      {
+        "id": "A",
+        "text": "nhóm chức –COOH liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "B",
+        "text": "nhóm chức –OH liên kết trực tiếp với nguyên tử carbon no"
+      },
+      {
+        "id": "C",
+        "text": "nhóm chức –CHO liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "D",
+        "text": "nhóm chức –COO- liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: nhóm chức –CHO liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-5",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 5,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Ketone là hợp chất hữu cơ trong phân tử có",
+    "options": [
+      {
+        "id": "A",
+        "text": "nhóm chức –CO- liên kết với hai gốc hydrocarbon"
+      },
+      {
+        "id": "B",
+        "text": "nhóm chức –OH liên kết trực tiếp với nguyên tử carbon no"
+      },
+      {
+        "id": "C",
+        "text": "nhóm chức –CHO liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "D",
+        "text": "nhóm chức –COO- liên kết với hai gốc hydrocarbon"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: nhóm chức –CO- liên kết với hai gốc hydrocarbon. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-6",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 6,
+    "level": "Biết",
+    "type": "single",
+    "stem": "(T.07) Nhóm chức của aldehyde là",
+    "options": [
+      {
+        "id": "A",
+        "text": "-COOH"
+      },
+      {
+        "id": "B",
+        "text": "-NH₂"
+      },
+      {
+        "id": "C",
+        "text": "-CHO"
+      },
+      {
+        "id": "D",
+        "text": "-OH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: -CHO. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-7",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 7,
+    "level": "Biết",
+    "type": "single",
+    "stem": "(T.07) Nhóm chức của ketone là",
+    "options": [
+      {
+        "id": "A",
+        "text": "-COO-"
+      },
+      {
+        "id": "B",
+        "text": "-CO-"
+      },
+      {
+        "id": "C",
+        "text": "-CHO"
+      },
+      {
+        "id": "D",
+        "text": "-O-"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: -CO-. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-8",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 8,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất nào sau đây là aldehyde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₂=CH-CH₂OH"
+      },
+      {
+        "id": "B",
+        "text": "CH₂=CH-CHO"
+      },
+      {
+        "id": "C",
+        "text": "CH₂=CH-COOH"
+      },
+      {
+        "id": "D",
+        "text": "CH₂=CH-COOCH₃"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: CH₂=CH-CHO. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-9",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 9,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Aldehyde no, đơn chức, mạch hở có công thức phân tử chung là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CₙH₂ₙO₂ ( n ≥ 1)"
+      },
+      {
+        "id": "B",
+        "text": "CₙH₂ₙO ( n ≥ 1)"
+      },
+      {
+        "id": "C",
+        "text": "CₙH₂ₙ₋₂O ( n ≥ 3)"
+      },
+      {
+        "id": "D",
+        "text": "CₙH₂ₙ₊₂O ( n ≥ 1)"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: CₙH₂ₙO ( n ≥ 1). Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-10",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 10,
+    "level": "Biết",
+    "type": "single",
+    "stem": "[QG.22 - 202] Công thức cấu tạo thu gọn của formic aldehyde là",
+    "options": [
+      {
+        "id": "A",
+        "text": "OHC-CHO"
+      },
+      {
+        "id": "B",
+        "text": "CH₃-CHO"
+      },
+      {
+        "id": "C",
+        "text": "HCHO"
+      },
+      {
+        "id": "D",
+        "text": "CH₂=CH-CHO"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: HCHO. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-34",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 34,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Trên phổ IR của acetone có tín hiệu đặc trưng cho nhóm carbonyl ở vùng",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 740 – 1 670 cm⁻¹"
+      },
+      {
+        "id": "B",
+        "text": "1 650 – 1 620 cm⁻¹"
+      },
+      {
+        "id": "C",
+        "text": "3 650 – 3 200 cm⁻¹"
+      },
+      {
+        "id": "D",
+        "text": "2 250 – 2 150 cm⁻¹"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 1 740 – 1 670 cm⁻¹. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-35",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 35,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Trong các hợp chất hữu cơ có công thức phân tử sau đây, chất nào không thể là aldehyde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₃H₆O"
+      },
+      {
+        "id": "B",
+        "text": "C₄H₆O"
+      },
+      {
+        "id": "C",
+        "text": "C₄H₈O"
+      },
+      {
+        "id": "D",
+        "text": "C₄H₁₀O"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: C₄H₁₀O. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-36",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 36,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Công thức nào sau đây không thể là của aldehyde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₄H₈O"
+      },
+      {
+        "id": "B",
+        "text": "C₃H₄O₂"
+      },
+      {
+        "id": "C",
+        "text": "C₂H₆O₂"
+      },
+      {
+        "id": "D",
+        "text": "CH₂O"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: C₂H₆O₂. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-37",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 37,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Số đồng phân có cùng công thức phân tử C₄H₈O, có khả năng tham gia phản ứng tráng bạc là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 2. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-38",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 38,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Cho ba hợp chất hữu cơ có phân tử khối tương đương: (1) C₃H₈; (2) C₂H₅OH; (3) CH₃CHO. Thứ tự giảm dần nhiệt độ sôi là",
+    "options": [
+      {
+        "id": "A",
+        "text": "(2) > (3) > (1)"
+      },
+      {
+        "id": "B",
+        "text": "(1) > (2) > (3)"
+      },
+      {
+        "id": "C",
+        "text": "(3) > (2) > (1)"
+      },
+      {
+        "id": "D",
+        "text": "(2) > (1) > (3)"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: (2) > (3) > (1). Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-39",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 39,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Trong các hợp chất HCHO, CH₃CHO, CH₃COCH₃ và CH₃CH₂CH₂CHO, hợp chất có độ tan trong nước kém nhất là",
+    "options": [
+      {
+        "id": "A",
+        "text": "HCHO"
+      },
+      {
+        "id": "B",
+        "text": "CH₃CHO"
+      },
+      {
+        "id": "C",
+        "text": "CH₃COCH₃"
+      },
+      {
+        "id": "D",
+        "text": "CH₃CH₂CH₂CHO"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: CH₃CH₂CH₂CHO. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-40",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 40,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Trong các hợp chất cho dưới đây, hợp chất nào có nhiệt độ sôi cao nhất?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Propan-2-one"
+      },
+      {
+        "id": "B",
+        "text": "Butan-2-one"
+      },
+      {
+        "id": "C",
+        "text": "Pentan-2-one"
+      },
+      {
+        "id": "D",
+        "text": "Hexan-2-one"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: Hexan-2-one. Aldehyde có –CHO, ketone có >C=O giữa hai gốc hydrocarbon; aldehyde thường cho phản ứng oxi hóa nhận biết, ketone thông thường không.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-41",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 41,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Khử hợp chất hữu cơ X bằng LiAlH₄ thu được (CH₃)₂CH-CH₂-CH₂OH. Chất X có tên là",
+    "options": [
+      {
+        "id": "A",
+        "text": "3-methylbutanal"
+      },
+      {
+        "id": "B",
+        "text": "2-methylbutan-3-al"
+      },
+      {
+        "id": "C",
+        "text": "2-methylbutanal"
+      },
+      {
+        "id": "D",
+        "text": "3-methylbutan-3-al"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Khử aldehyde R–CHO cho alcohol bậc I R–CH₂OH. Cấu trúc trước khử là 3-methylbutanal.",
+    "media": []
+  },
+  {
+    "id": "carbonyl-42",
+    "topic": "carbonyl",
+    "sourceQuestionNumber": 42,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Cho phản ứng khử: (CH₃)₂CHCOCH₃ + 2[H] → sản phẩm. Sản phẩm phản ứng là chất nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2-methylbutan-3-ol"
+      },
+      {
+        "id": "B",
+        "text": "3-methylbutan-2-ol"
+      },
+      {
+        "id": "C",
+        "text": "1,1-dimethylpropan-2-ol"
+      },
+      {
+        "id": "D",
+        "text": "3,3-dimethylpropan-2-ol"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: 3-methylbutan-2-ol. Khi khử ketone, nhóm C=O chuyển thành nhóm –CHOH; đánh số mạch chính để nhóm –OH có chỉ số nhỏ nhất.",
+    "media": []
+  },
+  {
+    "id": "acid-1",
+    "topic": "acid",
+    "sourceQuestionNumber": 1,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Carboxylic acid là những hợp chất hữu cơ trong phân tử có",
+    "options": [
+      {
+        "id": "A",
+        "text": "nhóm –OH liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "B",
+        "text": "nhóm C=O liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "C",
+        "text": "nhóm –COOH liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      },
+      {
+        "id": "D",
+        "text": "nhóm –CHO liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: nhóm –COOH liên kết trực tiếp với nguyên tử carbon hoặc nguyên tử hydrogen. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-2",
+    "reviewStatus": "needs-review",
+    "topic": "acid",
+    "sourceQuestionNumber": 2,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Công thức tổng quát của carboxylic acid no, đơn chức, mạch hở là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CₙH₂ₙO₂ (n ≥ 1)"
+      },
+      {
+        "id": "B",
+        "text": "CₙH₂ₙ₊₂O₂ (n ≥ 1)"
+      },
+      {
+        "id": "C",
+        "text": "CₙH₂ₙ₋₁COOH (n ≥ 1)"
+      },
+      {
+        "id": "D",
+        "text": "CₙH₂ₙO₂ (n ≥ 2)"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: CₙH₂ₙO₂ (n ≥ 1). Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-3",
+    "topic": "acid",
+    "sourceQuestionNumber": 3,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Propanoic acid có công thức cấu tạo là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₃CH₂OH"
+      },
+      {
+        "id": "B",
+        "text": "CH₃COOH"
+      },
+      {
+        "id": "C",
+        "text": "CH₃CH₂COOH"
+      },
+      {
+        "id": "D",
+        "text": "CH₃CH₂CH₂COOH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: CH₃CH₂COOH. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-4",
+    "topic": "acid",
+    "sourceQuestionNumber": 4,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Tên gọi của (CH₃)₂CH-COOH là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2-methylpropanoic acid"
+      },
+      {
+        "id": "B",
+        "text": "2-methylbutanoic acid"
+      },
+      {
+        "id": "C",
+        "text": "propenoic acid"
+      },
+      {
+        "id": "D",
+        "text": "2-methylpropenoic acid"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: 2-methylpropanoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-5",
+    "topic": "acid",
+    "sourceQuestionNumber": 5,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất Y có công thức cấu tạo thu gọn là CH₃CH₂CH(CH₃)COOH. Tên gọi của Y là",
+    "options": [
+      {
+        "id": "A",
+        "text": "4-methylbutanoic acid"
+      },
+      {
+        "id": "B",
+        "text": "pentanoic acid"
+      },
+      {
+        "id": "C",
+        "text": "2-methylpentanoic acid"
+      },
+      {
+        "id": "D",
+        "text": "2-methylbutanoic acid"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: 2-methylbutanoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-6",
+    "topic": "acid",
+    "sourceQuestionNumber": 6,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Hợp chất X có công thức cấu tạo: (CH₃)₂CHCH₂COOH. Tên của X là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 – methylpropanoic acid"
+      },
+      {
+        "id": "B",
+        "text": "2 – methylbutanoic acid"
+      },
+      {
+        "id": "C",
+        "text": "3 – methylbutanoic acid"
+      },
+      {
+        "id": "D",
+        "text": "3 – methylbutan – 1 – oic acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: 3 – methylbutanoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-7",
+    "topic": "acid",
+    "sourceQuestionNumber": 7,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Tên gọi của CH₃CH(CH₃)CH₂COOH là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2-methylpropanoic acid"
+      },
+      {
+        "id": "B",
+        "text": "2-methylbutanoic acid"
+      },
+      {
+        "id": "C",
+        "text": "3-methylbutanoic acid"
+      },
+      {
+        "id": "D",
+        "text": "3-methylpropanoic acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: 3-methylbutanoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-8",
+    "topic": "acid",
+    "sourceQuestionNumber": 8,
+    "level": "Biết",
+    "type": "single",
+    "stem": "Chất có công thức CH₃CH(CH₃)CH₂CH₂COOH có tên thay thế là",
+    "options": [
+      {
+        "id": "A",
+        "text": "2-methylpentanoic acid"
+      },
+      {
+        "id": "B",
+        "text": "2-methylbutanoic acid"
+      },
+      {
+        "id": "C",
+        "text": "isohexanoic acid"
+      },
+      {
+        "id": "D",
+        "text": "4-methylpentanoic acid"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: 4-methylpentanoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-9",
+    "topic": "acid",
+    "sourceQuestionNumber": 9,
+    "level": "Biết",
+    "type": "single",
+    "stem": "[QG.21 - 202] Công thức phân tử của formic acid là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₂O₂"
+      },
+      {
+        "id": "B",
+        "text": "C₂H₆O₂"
+      },
+      {
+        "id": "C",
+        "text": "C₂H₄O₂"
+      },
+      {
+        "id": "D",
+        "text": "CH₄O"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: CH₂O₂. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-10",
+    "topic": "acid",
+    "sourceQuestionNumber": 10,
+    "level": "Biết",
+    "type": "single",
+    "stem": "[QG.21 - 203] Công thức phân tử của acetic acid là",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₃H₆O₂"
+      },
+      {
+        "id": "B",
+        "text": "C₃H₆O"
+      },
+      {
+        "id": "C",
+        "text": "C₂H₄O₂"
+      },
+      {
+        "id": "D",
+        "text": "C₂H₆O"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: C₂H₄O₂. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-33",
+    "topic": "acid",
+    "sourceQuestionNumber": 33,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Carboxylic acid X có cấu tạo mạch hở, công thức tổng quát CₙH₂ₙ₋₂O₄. Carboxylic acid X thuộc loại",
+    "options": [
+      {
+        "id": "A",
+        "text": "no, đơn chức"
+      },
+      {
+        "id": "B",
+        "text": "không no, đơn chức"
+      },
+      {
+        "id": "C",
+        "text": "no và có 2 chức acid"
+      },
+      {
+        "id": "D",
+        "text": "không no và có 2 chức acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: no và có 2 chức acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-34",
+    "topic": "acid",
+    "sourceQuestionNumber": 34,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Số đồng phân cấu tạo carboxylic acid và ester có cùng công thức phân tử C₄H₈O₂ là",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: 6. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-35",
+    "topic": "acid",
+    "sourceQuestionNumber": 35,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "(CH₃)₂C=CHCOOH có tên gọi theo danh pháp thay thế là",
+    "options": [
+      {
+        "id": "A",
+        "text": "1,1-dimethylpropenoic acid"
+      },
+      {
+        "id": "B",
+        "text": "3,3-dimethylpropenoic acid"
+      },
+      {
+        "id": "C",
+        "text": "2-methylbut-2-enoic acid"
+      },
+      {
+        "id": "D",
+        "text": "3-methylbut-2-enoic acid"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: 3-methylbut-2-enoic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-36",
+    "topic": "acid",
+    "sourceQuestionNumber": 36,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Giấm ăn được dùng phổ biến trong chế biến thực phẩm, có chứa acetic acid với hàm lượng 4 – 8% về thể tích. Một chai giấm ăn thể tích 500 mL có hàm lượng acetic acid là 5%, thể tích acetic acid có trong chai giấm ăn đó là",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 mL"
+      },
+      {
+        "id": "B",
+        "text": "25 mL"
+      },
+      {
+        "id": "C",
+        "text": "50 mL"
+      },
+      {
+        "id": "D",
+        "text": "100 mL"
+      }
+    ],
+    "answer": "B",
+    "explanation": "V(acetic acid) = 500 × 5% = 25 mL.",
+    "media": []
+  },
+  {
+    "id": "acid-37",
+    "topic": "acid",
+    "sourceQuestionNumber": 37,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Để loại bỏ lớp cặn màu trắng trong ấm đun nước, người ta có thể dùng dung dịch nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giấm ăn"
+      },
+      {
+        "id": "B",
+        "text": "Nước"
+      },
+      {
+        "id": "C",
+        "text": "Muối ăn"
+      },
+      {
+        "id": "D",
+        "text": "Cồn 70⁰"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: Giấm ăn. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-38",
+    "topic": "acid",
+    "sourceQuestionNumber": 38,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Sữa chua được lên men từ sữa bột, sữa bò, sữa dê, … Sữa chua tốt cho hệ tiêu hóa. Vị chua trong sữa chua tạo bởi acid nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Formic acid"
+      },
+      {
+        "id": "B",
+        "text": "Acetic acid"
+      },
+      {
+        "id": "C",
+        "text": "Lactic acid"
+      },
+      {
+        "id": "D",
+        "text": "Benzoic acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: Lactic acid. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-39",
+    "topic": "acid",
+    "sourceQuestionNumber": 39,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "(A.08): Dãy gồm các chất được xếp theo chiều nhiệt độ sôi tăng dần từ trái sang phải là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₃CHO, C₂H₅OH, C₂H₆, CH₃COOH"
+      },
+      {
+        "id": "B",
+        "text": "CH₃COOH, C₂H₆, CH₃CHO, C₂H₅OH"
+      },
+      {
+        "id": "C",
+        "text": "C₂H₆, C₂H₅OH, CH₃CHO, CH₃COOH"
+      },
+      {
+        "id": "D",
+        "text": "C₂H₆, CH₃CHO, C₂H₅OH, CH₃COOH"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: C₂H₆, CH₃CHO, C₂H₅OH, CH₃COOH. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-40",
+    "topic": "acid",
+    "sourceQuestionNumber": 40,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "(B.09): Dãy gồm các chất được sắp xếp theo chiều tăng dần nhiệt độ sôi từ trái sang phải là",
+    "options": [
+      {
+        "id": "A",
+        "text": "CH₃COOH, C₂H₅OH, HCOOH, CH₃CHO"
+      },
+      {
+        "id": "B",
+        "text": "CH₃CHO, C₂H₅OH, HCOOH, CH₃COOH"
+      },
+      {
+        "id": "C",
+        "text": "CH₃COOH, HCOOH, C₂H₅OH, CH₃CHO"
+      },
+      {
+        "id": "D",
+        "text": "HCOOH, CH₃COOH, C₂H₅OH, CH₃CHO"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đáp án B: CH₃CHO, C₂H₅OH, HCOOH, CH₃COOH. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-41",
+    "topic": "acid",
+    "sourceQuestionNumber": 41,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "(B.07): Cho các chất: propionic acid (X), acetic acid (Y), ethyl alcohol (Z) và dimethyl ether (T). Dãy gồm các chất được sắp xếp theo chiều tăng dần nhiệt độ sôi là",
+    "options": [
+      {
+        "id": "A",
+        "text": "T, Z, Y, X"
+      },
+      {
+        "id": "B",
+        "text": "Z, T, Y, X"
+      },
+      {
+        "id": "C",
+        "text": "T, X, Y, Z"
+      },
+      {
+        "id": "D",
+        "text": "Y, T, X, Z"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Đáp án A: T, Z, Y, X. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-42",
+    "topic": "acid",
+    "sourceQuestionNumber": 42,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Cho X, Y, Z, T là các chất khác nhau trong số 4 chất: CH₃COOH, C₆H₅COOH (benzoic acid), C₂H₅COOH, HCOOH và giá trị nhiệt độ sôi được ghi trong bảng sau: Chất X Y Z T. Nhiệt độ sôi (°C): 100,5; 118,2; 249,0; 141,0. Nhận xét nào sau đây là đúng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "T là C₆H₅COOH"
+      },
+      {
+        "id": "B",
+        "text": "X là C₂H₅COOH"
+      },
+      {
+        "id": "C",
+        "text": "Y là CH₃COOH"
+      },
+      {
+        "id": "D",
+        "text": "Z là HCOOH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Đáp án C: Y là CH₃COOH. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-43",
+    "topic": "acid",
+    "sourceQuestionNumber": 43,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Dãy nào sau đây gồm các chất có nhiệt độ sôi tăng dần từ trái qua phải?",
+    "options": [
+      {
+        "id": "A",
+        "text": "C₄H₁₀, C₂H₅OH, CH₃CHO, HCOOH, CH₃COOH"
+      },
+      {
+        "id": "B",
+        "text": "C₂H₅OH, C₄H₁₀, CH₃CHO, CH₃COOH, HCOOH"
+      },
+      {
+        "id": "C",
+        "text": "CH₃CHO, C₂H₅OH, HCOOH, CH₃COOH, C₄H₁₀"
+      },
+      {
+        "id": "D",
+        "text": "C₄H₁₀, CH₃CHO, C₂H₅OH, HCOOH, CH₃COOH"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: C₄H₁₀, CH₃CHO, C₂H₅OH, HCOOH, CH₃COOH. Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  },
+  {
+    "id": "acid-44",
+    "topic": "acid",
+    "sourceQuestionNumber": 44,
+    "level": "Hiểu",
+    "type": "single",
+    "stem": "Cho các chất sau: (1) C₃H₈, (2) C₂H₅OH, (3) CH₃CHO, (4) CH₃COOH. Thứ tự các chất theo chiều tăng dần nhiệt độ sôi từ trái sang phải là",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1),(2),(3),(4)"
+      },
+      {
+        "id": "B",
+        "text": "(4), (3), (2), (1)"
+      },
+      {
+        "id": "C",
+        "text": "(1), (2), (4), (3)"
+      },
+      {
+        "id": "D",
+        "text": "(1), (3), (2), (4)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Đáp án D: (1), (3), (2), (4). Nhóm –COOH quyết định tính acid; cần đánh số từ carbon carboxyl và đối chiếu liên kết hydrogen khi so sánh nhiệt độ sôi.",
+    "media": []
+  }
+]

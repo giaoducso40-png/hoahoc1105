@@ -1,0 +1,337 @@
+/* Lab 1 V5 - hai nhánh thế/tách, mô phỏng bằng trạng thái thay vì ảnh tĩnh. */
+.lab-substitution{overflow:hidden}
+.lab-substitution .lab-head{
+  grid-template-columns:minmax(250px,.8fr) minmax(340px,1.2fr);
+  gap:6px 20px;
+  padding:10px 16px;
+}
+.lab-substitution .lab-head h2{margin:3px 0 0;font-size:1.2rem}
+.lab-substitution .lab-objective{font-size:.8rem;line-height:1.38;text-align:justify;text-align-last:left}
+.lab-substitution .lab-warning{padding:7px 10px;font-size:.74rem;line-height:1.35}
+.lab-substitution .lab-workspace{
+  grid-template-columns:minmax(520px,1.2fr) minmax(380px,.8fr);
+  height:clamp(390px,50dvh,480px);
+  min-width:0;
+}
+.lab-substitution .lab-stage{min-width:0;overflow:hidden}
+.lab-substitution .lab-guide{
+  min-width:0;
+  padding:13px 16px;
+  overflow:hidden;
+}
+.lab-substitution .lab-guide-content{min-width:0}
+.lab-substitution .lab-guide h3{margin:2px 0 5px;font-size:1.06rem;line-height:1.25}
+.lab-substitution .lab-guide p{font-size:.82rem;line-height:1.4;text-align:justify;text-align-last:left;word-break:normal;overflow-wrap:normal;hyphens:none}
+.lab-substitution .prediction{gap:5px;margin:8px 0}
+.lab-substitution .prediction label{padding:7px 9px;font-size:.78rem;line-height:1.3;text-align:left}
+.lab-substitution .lab-observation{margin:6px 0 10px;padding:8px 10px}
+.lab-substitution .lab-observation p{font-size:.78rem!important;line-height:1.35!important}
+.lab-substitution .lab-controls{position:static;margin-top:auto;padding-top:9px;background:#fff}
+.lab-substitution .lab-controls button{min-height:42px;white-space:nowrap}
+.lab-substitution .lab-equation{display:grid;gap:6px;margin-top:8px;padding:9px 10px;font-size:clamp(.78rem,1vw,.94rem);overflow:hidden}
+.lab-substitution .equation-line{white-space:nowrap;transform-origin:left center}
+
+.lab-substitution .scene-substitution{
+  width:100%;
+  height:100%;
+  padding:38px 4% 54px;
+}
+.lab-substitution .scene-substitution .mq-diagram{
+  inset:2% 3% 12%;
+  width:94%;
+  height:86%;
+  filter:drop-shadow(0 10px 12px rgba(28,72,63,.08));
+}
+.lab-substitution .scene-substitution .mq-diagram text{
+  font-family:"Noto Sans","Segoe UI",Arial,sans-serif;
+  letter-spacing:.01em;
+}
+.lab-substitution .scene-substitution .chemical-label{
+  fill:#153f37;
+  font-size:16px;
+  font-weight:900;
+}
+.lab-substitution .scene-substitution .tag{
+  fill:#174c40;
+  font-size:14px;
+  font-weight:900;
+  paint-order:stroke;
+  stroke:rgba(255,255,255,.96);
+  stroke-width:5px;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .water-bath .glass{
+  fill:rgba(255,255,255,.12);
+  stroke:#6f9790;
+  stroke-width:5;
+}
+.lab-substitution .scene-substitution .water-bath .water{
+  fill:rgba(143,211,207,.38);
+  stroke:#66a59f;
+  stroke-width:2.5;
+}
+.lab-substitution .scene-substitution .water-bath text{
+  fill:#2b6157;
+  font-size:13px;
+  font-weight:900;
+  paint-order:stroke;
+  stroke:rgba(238,250,247,.95);
+  stroke-width:5px;
+}
+.lab-substitution .scene-substitution .tube .glass{
+  fill:rgba(255,255,255,.44);
+  stroke:#7f9f9a;
+  stroke-width:5;
+}
+.lab-substitution .scene-substitution .liquid-a{
+  fill:#8fd4c9;
+  stroke:#6bbcaf;
+  stroke-width:1;
+}
+.lab-substitution .scene-substitution .liquid-b{
+  fill:#efd783;
+  stroke:#d5b95b;
+  stroke-width:1;
+}
+.lab-substitution .scene-substitution .product{
+  opacity:0;
+  fill:#173f37;
+  font-size:13px;
+  font-weight:950;
+  paint-order:stroke;
+  stroke:rgba(255,255,255,.94);
+  stroke-width:5px;
+  stroke-linejoin:round;
+  transition:opacity .35s ease;
+}
+.lab-substitution .scene-substitution .gas-line{
+  fill:none;
+  stroke:#739b95;
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .gas-bubbles circle{
+  fill:rgba(255,255,255,.94);
+  stroke:#278f7b;
+  stroke-width:2.5;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-line,
+.lab-substitution .scene-substitution.phase-branch-products .gas-line{
+  stroke:#2d9884;
+  stroke-dasharray:10 8;
+  animation:substitutionGasFlow .85s linear infinite;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .water,
+.lab-substitution .scene-substitution.phase-branch-products .water{
+  animation:substitutionWarmBath 1.5s ease-in-out infinite alternate;
+}
+.lab-substitution .scene-substitution.phase-branch-products .product{
+  opacity:1;
+}
+@keyframes substitutionGasFlow{to{stroke-dashoffset:-36}}
+@keyframes substitutionWarmBath{to{fill:rgba(151,218,209,.53)}}
+.lab-substitution .scene-substitution .scene-art{display:none!important}
+.lab-substitution .scene-substitution .scene-effect{display:none!important}
+.lab-substitution .branch-compare{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:end;
+  gap:clamp(54px,8vw,94px);
+  width:min(92%,650px);
+  height:78%;
+  padding:14px 28px 36px;
+  border:1px solid rgba(100,128,120,.23);
+  border-radius:22px;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(232,246,240,.82));
+  box-shadow:0 18px 34px rgba(21,68,55,.14),inset 0 1px #fff;
+}
+.lab-substitution .branch-compare:before{
+  content:"Bể cách thủy";
+  position:absolute;
+  left:7%;right:7%;bottom:18px;
+  height:38%;
+  padding:7px 12px;
+  border:3px solid rgba(64,119,108,.45);
+  border-top-color:rgba(64,119,108,.25);
+  border-radius:7px 7px 24px 24px;
+  background:linear-gradient(180deg,rgba(170,224,214,.2),rgba(109,196,181,.48));
+  color:#37675d;
+  font-size:.66rem;
+  font-weight:850;
+  text-align:center;
+}
+.lab-substitution .branch{
+  position:relative;
+  z-index:3;
+  justify-self:center;
+  width:clamp(92px,10vw,122px);
+  height:78%;
+  min-height:210px;
+  border:5px solid rgba(72,111,104,.52);
+  border-top:0;
+  border-radius:0 0 46px 46px;
+  background:linear-gradient(90deg,rgba(255,255,255,.9),rgba(255,255,255,.25));
+  box-shadow:inset 10px 0 0 rgba(255,255,255,.4),0 15px 22px rgba(27,72,62,.14);
+  transition:transform .45s ease,box-shadow .45s ease;
+}
+.lab-substitution .branch:before{
+  content:"1-chloropropane";
+  position:absolute;
+  left:50%;top:-37px;
+  width:max-content;
+  max-width:145px;
+  padding:5px 8px;
+  border-radius:999px;
+  background:#fff;
+  color:#244d43;
+  box-shadow:0 5px 12px rgba(26,68,58,.13);
+  font-size:.63rem;
+  font-weight:850;
+  transform:translateX(-50%);
+  white-space:nowrap;
+}
+.lab-substitution .branch>b{
+  position:absolute;
+  left:-15px;top:12px;
+  display:grid;
+  place-items:center;
+  width:28px;height:28px;
+  border:2px solid #fff;
+  border-radius:50%;
+  background:#7659c8;
+  color:#fff;
+  box-shadow:0 5px 12px rgba(56,35,123,.2);
+}
+.lab-substitution .branch>span{
+  position:absolute;
+  z-index:3;
+  left:50%;top:30px;
+  width:max-content;
+  max-width:132px;
+  padding:5px 8px;
+  border-radius:8px;
+  background:rgba(255,255,255,.92);
+  color:#294e45;
+  font-size:.65rem;
+  font-weight:900;
+  line-height:1.2;
+  text-align:center;
+  transform:translateX(-50%);
+  white-space:nowrap;
+}
+.lab-substitution .branch-liquid{
+  position:absolute;
+  left:4px;right:4px;bottom:4px;
+  height:45%;
+  border-radius:0 0 38px 38px;
+  background:linear-gradient(180deg,rgba(178,225,215,.74),rgba(84,181,162,.72));
+  box-shadow:inset 0 9px 10px rgba(255,255,255,.25);
+  transition:height .7s ease,background .7s ease;
+}
+.lab-substitution .branch-b .branch-liquid{background:linear-gradient(180deg,rgba(241,226,179,.7),rgba(220,188,93,.63))}
+.lab-substitution .branch>em{
+  position:absolute;
+  z-index:4;
+  left:50%;bottom:19%;
+  padding:4px 7px;
+  border-radius:999px;
+  background:rgba(255,255,255,.9);
+  color:#315b51;
+  font-size:.62rem;
+  font-style:normal;
+  font-weight:950;
+  opacity:0;
+  transform:translate(-50%,8px);
+  transition:opacity .35s ease,transform .35s ease;
+}
+.lab-substitution .gas-path{
+  position:absolute;
+  z-index:5;
+  right:-70px;top:8px;
+  width:70px;height:74px;
+  border-top:5px solid rgba(75,111,106,.55);
+  border-right:5px solid rgba(75,111,106,.55);
+  border-radius:0 22px 0 0;
+  opacity:0;
+  transition:opacity .35s ease;
+}
+.lab-substitution .gas-path:before,.lab-substitution .gas-path:after{
+  content:"";
+  position:absolute;
+  width:7px;height:7px;
+  border:2px solid #5f9f92;
+  border-radius:50%;
+  background:rgba(255,255,255,.86);
+  opacity:0;
+}
+.lab-substitution .phase-branches-heated .gas-path:before,.lab-substitution .phase-branches-heated .gas-path:after{
+  opacity:1;
+  animation:propenePath 1.6s linear infinite;
+}
+.lab-substitution .phase-branches-heated .gas-path:after{animation-delay:.8s}
+@keyframes propenePath{
+  0%{left:2px;top:-6px;transform:scale(.75)}
+  55%{left:52px;top:-6px;transform:scale(1)}
+  100%{left:57px;top:56px;transform:scale(.7);opacity:.15}
+}
+.lab-substitution .phase-branches-ready .branch{animation:tubeSet .5s ease both}
+.lab-substitution .phase-branches-ready .branch-b{animation-delay:.12s}
+@keyframes tubeSet{from{transform:translateY(-20px);opacity:.45}to{transform:translateY(0);opacity:1}}
+.lab-substitution .phase-branches-heated .branch{
+  box-shadow:inset 10px 0 0 rgba(255,255,255,.4),0 0 0 6px rgba(242,167,77,.1),0 17px 26px rgba(27,72,62,.18);
+}
+.lab-substitution .phase-branches-heated .branch-liquid{background:linear-gradient(180deg,rgba(179,225,215,.54),rgba(84,181,162,.58))}
+.lab-substitution .phase-branches-heated .gas-path{opacity:1}
+.lab-substitution .product-cards{
+  position:absolute;
+  z-index:6;
+  left:8%;right:8%;bottom:50px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(54px,8vw,94px);
+  pointer-events:none;
+}
+.lab-substitution .product-cards span{
+  justify-self:center;
+  min-width:128px;
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.9);
+  border-radius:12px;
+  background:rgba(255,255,255,.96);
+  color:#234d43;
+  box-shadow:0 8px 18px rgba(23,65,55,.15);
+  font-size:.7rem;
+  font-weight:950;
+  text-align:center;
+  opacity:0;
+  transform:translateY(8px);
+  transition:opacity .35s ease,transform .35s ease;
+}
+.lab-substitution .phase-branch-products .branch>em,.lab-substitution .phase-branch-products .product-cards span{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+.lab-substitution .phase-branch-products .product-cards span{transform:translateY(0)}
+.lab-substitution .phase-branch-products .gas-path{opacity:1}
+.lab-substitution .scene-caption{left:6%;right:6%;bottom:7px;padding:8px 11px;font-size:.7rem;line-height:1.3;text-align:center}
+
+@media(max-width:1050px){
+ .lab-substitution .lab-head{grid-template-columns:1fr}
+ .lab-substitution .lab-workspace{grid-template-columns:1fr;height:auto}
+ .lab-substitution .lab-stage{min-height:390px}
+ .lab-substitution .lab-guide{min-height:330px;overflow:visible}
+}
+@media(max-width:620px){
+ .lab-substitution .branch-compare{gap:26px;padding-inline:12px}
+ .lab-substitution .branch{width:82px;min-height:190px}
+ .lab-substitution .gas-path{right:-42px;width:42px}
+ .lab-substitution .product-cards{gap:26px;left:4%;right:4%}
+ .lab-substitution .product-cards span{min-width:102px;font-size:.62rem}
+ .lab-substitution .equation-line{white-space:normal}
+}
+@media(prefers-reduced-motion:reduce){
+ .lab-substitution .branch,.lab-substitution .branch-liquid,.lab-substitution .gas-path,.lab-substitution .product-cards span{transition:none!important;animation:none!important}
+}

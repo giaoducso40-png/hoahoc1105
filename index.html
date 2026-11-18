@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f9f7">
+  <meta name="description" content="MolQuest – Thành phố Hóa chất, học liệu tương tác Dẫn xuất hydrocarbon Hóa học 11">
+  <title>MolQuest • Thành phố Hóa chất 11</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/images/city-floor.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/city-v4.css">
+  <link rel="stylesheet" href="assets/css/personalization-v4.css">
+  <link rel="stylesheet" href="assets/css/labs-v4.css">
+  <link rel="stylesheet" href="assets/css/lab-substitution-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-cuo-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-phenol-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-tollens-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-acid-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-ester-v5.css">
+  <link rel="stylesheet" href="assets/css/lab-diagrams-v6.css">
+  <link rel="stylesheet" href="assets/css/content-v4.css">
+  <link rel="stylesheet" href="assets/css/responsive-v6.css">
+  <link rel="stylesheet" href="assets/css/polish-v7.css">
+</head>
+<body>
+  <a class="skip-link" href="#viewRoot">Đi thẳng đến nội dung</a>
+  <div class="app-shell">
+    <header class="app-header">
+      <button class="brand" data-route="city" aria-label="Về Thành phố Hóa chất">
+        <span class="brand-orbit" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>MolQuest</strong><small>Dẫn xuất hydrocarbon 11</small></span>
+      </button>
+      <div class="explorer-chip">
+        <span class="avatar" aria-hidden="true">M</span>
+        <span><small>Nhà thám hiểm</small><strong id="explorerName">Chưa đăng ký</strong></span>
+      </div>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <button data-route="city" class="active"><span>⌂</span>Thành phố</button>
+        <button data-route="dashboard"><span>▦</span>Dashboard</button>
+        <button data-route="library"><span>▤</span>Sổ tay</button>
+        <button data-route="game"><span>▶</span>Thử thách</button>
+        <button data-route="labs"><span>⚗</span>Lab</button>
+      </nav>
+      <div class="header-actions">
+        <button id="audioToggle" class="icon-control" aria-pressed="false" aria-label="Bật âm thanh">♪</button>
+        <button data-route="profile" class="icon-control" aria-label="Hồ sơ và dữ liệu">◎</button>
+        <button id="logoutButton" class="icon-control" aria-label="Đăng xuất khỏi hồ sơ trên trình duyệt này" title="Đăng xuất" hidden>↪</button>
+      </div>
+    </header>
+
+    <main id="appMain">
+      <div id="routeProgress" class="route-progress" hidden><span></span></div>
+      <section id="viewRoot" tabindex="-1" aria-live="polite"></section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Điều hướng di động">
+      <button data-route="city" class="active"><span>⌂</span>Bản đồ</button>
+      <button data-route="game"><span>▶</span>Chơi</button>
+      <button data-route="dashboard"><span>▦</span>Tiến độ</button>
+      <button data-route="labs"><span>⚗</span>Lab</button>
+    </nav>
+  </div>
+
+  <dialog id="welcomeDialog" class="welcome-dialog">
+    <form id="welcomeForm" method="dialog">
+      <div class="welcome-mol" aria-hidden="true"><span>M</span></div>
+      <p class="eyebrow">THẺ THAM QUAN CÁ NHÂN</p>
+      <h1>Chào mừng đến Thành phố Hóa chất</h1>
+      <p>Mol đã chuẩn bị năm khu khám phá. Cho Mol biết tên để hành trình hôm nay mang dấu ấn của riêng bạn nhé.</p>
+      <label>Tên nhà thám hiểm
+        <input id="welcomeName" maxlength="30" autocomplete="name" placeholder="Ví dụ: Minh Anh" required>
+      </label>
+      <button class="primary-button" type="submit">Nhận thẻ tham quan</button>
+    </form>
+  </dialog>
+
+  <dialog id="stationDialog" class="station-dialog">
+    <button class="dialog-close" data-close-dialog aria-label="Đóng">×</button>
+    <div id="stationDialogContent"></div>
+  </dialog>
+
+  <dialog id="questionDialog" class="question-dialog">
+    <div class="dialog-head">
+      <div><span id="questionMeta" class="pill"></span><h2>Chướng ngại kiến thức</h2></div>
+      <span id="questionCounter" class="counter"></span>
+    </div>
+    <div id="questionMedia" class="question-media"></div>
+    <p id="questionStem" class="question-stem"></p>
+    <div id="questionOptions" class="option-list"></div>
+    <div id="questionFeedback" class="feedback" role="status" aria-live="polite"></div>
+    <div class="dialog-actions">
+      <button id="hintButton" class="ghost-button" type="button">Mol gợi ý</button>
+      <button id="questionAction" class="primary-button" type="button">Chốt đáp án</button>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

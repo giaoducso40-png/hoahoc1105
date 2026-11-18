@@ -1,0 +1,265 @@
+/* Lab 3: Phenol và nước bromine. Chỉ ghi đè trong lab này. */
+.lab-phenol-bromine,
+.lab-phenol-bromine * {
+  box-sizing: border-box;
+}
+
+.lab-phenol-bromine {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.lab-phenol-bromine .lab-workspace,
+.lab-phenol-bromine .lab-stage,
+.lab-phenol-bromine .lab-guide,
+.lab-phenol-bromine .lab-guide-content {
+  min-width: 0;
+}
+
+.lab-phenol-bromine .lab-workspace {
+  max-height: calc(100dvh - 236px);
+  overflow: hidden;
+}
+
+.lab-phenol-bromine .lab-guide {
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+.lab-phenol-bromine .lab-objective,
+.lab-phenol-bromine .lab-warning,
+.lab-phenol-bromine .lab-instruction,
+.lab-phenol-bromine .lab-observation p,
+.lab-phenol-bromine .note {
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+.lab-phenol-bromine .lab-controls button,
+.lab-phenol-bromine .pill,
+.lab-phenol-bromine .eyebrow,
+.lab-phenol-bromine .bench-label {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.scene-phenol-bromine {
+  isolation: isolate;
+  width: min(92%, 720px);
+  height: min(92%, 520px);
+  overflow: hidden;
+  border: 1px solid rgba(169, 205, 194, .58);
+  border-radius: 24px;
+  background:
+    linear-gradient(rgba(255, 255, 255, .34) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .34) 1px, transparent 1px),
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, .98), rgba(234, 247, 241, .88) 68%, rgba(217, 235, 228, .92));
+  background-size: 34px 34px, 34px 34px, auto;
+  box-shadow: inset 0 1px 0 #fff, 0 18px 40px rgba(37, 87, 76, .12);
+}
+
+.scene-phenol-bromine .mq-diagram {
+  inset: 2% 4% 12%;
+  width: 92%;
+  height: 86%;
+  overflow: visible;
+}
+
+.scene-phenol-bromine .mq-diagram text {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0;
+  paint-order: stroke;
+  stroke: rgba(247, 252, 250, .9);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.scene-phenol-bromine .mq-diagram .tag {
+  fill: #6f421d;
+  font-size: 14px;
+}
+
+.scene-phenol-bromine .mq-diagram .chemical-label {
+  fill: #174c40;
+  font-size: 15px;
+}
+
+/* Giá ống nghiệm ở phía sau, nét mảnh để không che ống. */
+.scene-phenol-bromine .rack path {
+  fill: none;
+  stroke: #8179a6;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.scene-phenol-bromine .rack circle {
+  fill: rgba(255, 255, 255, .1);
+  stroke: #8179a6;
+  stroke-width: 5;
+}
+
+/* Thành ống nghiệm trong, có viền và vệt phản sáng riêng. */
+.scene-phenol-bromine .phenol-tube .glass {
+  fill: rgba(255, 255, 255, .3);
+  stroke: #819f9a;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 9px 8px rgba(41, 81, 72, .13));
+}
+
+.scene-phenol-bromine .phenol-liquid {
+  fill: rgba(247, 250, 245, .78);
+  stroke: rgba(182, 202, 195, .45);
+  stroke-width: 1.4;
+  transition: fill .75s ease, opacity .75s ease;
+}
+
+/* Đưa ống nhỏ giọt đến đúng ngay trên miệng ống nghiệm. */
+.scene-phenol-bromine .dropper {
+  transform: translateX(-184px);
+  transform-box: view-box;
+}
+
+.scene-phenol-bromine .dropper path:first-child {
+  fill: #d29a66;
+  stroke: #8b5c39;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 3px 3px rgba(91, 54, 28, .14));
+}
+
+.scene-phenol-bromine .dropper path:nth-child(2) {
+  fill: none;
+  stroke: #8b5c39;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transform: scaleY(.52);
+  transform-origin: 464px 110px;
+}
+
+.scene-phenol-bromine .bromine-drop {
+  fill: #b9601b !important;
+  stroke: #82400f !important;
+  stroke-width: 2.2 !important;
+  opacity: 0;
+  transform: translateY(-58px);
+  transform-origin: 464px 220px;
+  filter: drop-shadow(0 2px 2px rgba(113, 55, 14, .22));
+}
+
+/* Kết tủa là các bông trắng trong chất lỏng, không phải bọt khí. */
+.scene-phenol-bromine .precipitate {
+  opacity: 0;
+  transform: translateY(-5px) scale(.45);
+  transform-origin: 280px 336px;
+  transition: opacity .75s ease, transform .95s ease;
+}
+
+.scene-phenol-bromine .precipitate path {
+  fill: rgba(255, 255, 252, .98);
+  stroke: #c8d2cd;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 1px rgba(64, 84, 77, .18));
+}
+
+.scene-phenol-bromine.phase-phenol-ready .phenol-liquid,
+.scene-phenol-bromine.phase-ready .phenol-liquid {
+  fill: rgba(247, 250, 245, .8);
+}
+
+.scene-phenol-bromine.phase-bromine-drops .phenol-liquid {
+  fill: rgba(225, 178, 103, .34);
+  animation: phenolContactFade 2.2s .45s ease-out both;
+}
+
+.scene-phenol-bromine.phase-bromine-drops .bromine-drop {
+  opacity: 1;
+  animation: phenolDropToTube 1.2s ease-in 3;
+}
+
+.scene-phenol-bromine.phase-bromine-drops .precipitate {
+  opacity: .28;
+  transform: translateY(-8px) scale(.58);
+}
+
+.scene-phenol-bromine.phase-precipitate-growing .phenol-liquid {
+  fill: rgba(250, 249, 238, .82);
+}
+
+.scene-phenol-bromine.phase-precipitate-growing .precipitate {
+  opacity: .9;
+  transform: translateY(-8px) scale(.9);
+  animation: phenolFlocculate 1.9s ease-in-out infinite alternate;
+}
+
+.scene-phenol-bromine.phase-precipitate-settled .phenol-liquid {
+  fill: rgba(250, 250, 243, .76);
+}
+
+.scene-phenol-bromine.phase-precipitate-settled .precipitate {
+  opacity: 1;
+  transform: translateY(5px) scale(1);
+}
+
+@keyframes phenolDropToTube {
+  0% { opacity: 0; transform: translateY(-60px) scale(.78); }
+  16% { opacity: 1; }
+  82% { opacity: .95; }
+  100% { opacity: 0; transform: translateY(52px) scale(.98); }
+}
+
+@keyframes phenolContactFade {
+  0% { fill: rgba(212, 136, 45, .48); }
+  62% { fill: rgba(232, 198, 138, .28); }
+  100% { fill: rgba(249, 248, 235, .72); }
+}
+
+@keyframes phenolFlocculate {
+  from { transform: translateY(-10px) scale(.88); }
+  to { transform: translateY(1px) scale(.94); }
+}
+
+@media (max-width: 1366px), (max-height: 768px) {
+  .lab-phenol-bromine .lab-head { padding-block: 10px; }
+  .lab-phenol-bromine .lab-workspace {
+    height: min(55dvh, 510px);
+    max-height: calc(100dvh - 218px);
+  }
+  .lab-phenol-bromine .lab-guide { padding: 14px 18px; }
+  .lab-phenol-bromine .lab-guide h3 { font-size: 1.08rem; }
+  .lab-phenol-bromine .lab-guide p { line-height: 1.42; }
+  .scene-phenol-bromine { height: min(94%, 430px); }
+}
+
+@media (max-width: 820px) {
+  .lab-phenol-bromine .lab-workspace {
+    max-height: none;
+    height: auto;
+    overflow: visible;
+  }
+  .lab-phenol-bromine .lab-guide { overflow: visible; }
+  .scene-phenol-bromine {
+    width: min(96%, 680px);
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 520px) {
+  .scene-phenol-bromine {
+    min-height: 310px;
+    border-radius: 18px;
+  }
+  .scene-phenol-bromine .mq-diagram .chemical-label { font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-phenol-bromine .bromine-drop,
+  .scene-phenol-bromine .precipitate,
+  .scene-phenol-bromine .phenol-liquid {
+    animation: none !important;
+  }
+}
