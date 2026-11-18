@@ -263,3 +263,106 @@
     animation: none !important;
   }
 }
+
+/* V15 — Lab 3: dụng cụ đúng tỉ lệ, nước bromine vàng nâu và kết tủa bông trắng. */
+.scene-phenol-bromine .bench-shadow{fill:rgba(28,65,57,.13);filter:blur(7px)}
+.scene-phenol-bromine .rack path,
+.scene-phenol-bromine .rack ellipse{
+ fill:none;stroke:#777098;stroke-width:6;stroke-linecap:round;stroke-linejoin:round
+}
+.scene-phenol-bromine .phenol-tube .glass{
+ fill:url(#phenolGlass,rgba(248,255,253,.3));stroke:#789c98;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;
+ filter:drop-shadow(0 8px 7px rgba(41,81,72,.13))
+}
+.scene-phenol-bromine .phenol-tube .glass-highlight{
+ fill:none;stroke:rgba(255,255,255,.9);stroke-width:4;stroke-linecap:round
+}
+.scene-phenol-bromine .phenol-liquid{
+ fill:rgba(247,250,245,.82)!important;stroke:#a9c2bb!important;stroke-width:1.5!important;
+ transition:fill .8s ease
+}
+.scene-phenol-bromine .liquid-surface{fill:none;stroke:#a9c2bb;stroke-width:2}
+.scene-phenol-bromine .reagent-bottle .bottle-glass{
+ fill:rgba(163,91,38,.3);stroke:#74411f;stroke-width:5;stroke-linecap:round;stroke-linejoin:round
+}
+.scene-phenol-bromine .reagent-bottle .bottle-liquid{
+ fill:url(#bromineBottle,#a95d26);opacity:.86;stroke:#713d1d;stroke-width:1.5
+}
+.scene-phenol-bromine .reagent-bottle .bottle-cap{fill:#4c3a31;stroke:#2f2520;stroke-width:3}
+.scene-phenol-bromine .reagent-bottle .bottle-label{fill:#f4ead8;stroke:#d0b99b;stroke-width:2}
+.scene-phenol-bromine .reagent-bottle .bottle-title,
+.scene-phenol-bromine .reagent-bottle .bottle-sub{
+ fill:#613719;stroke:none;text-anchor:middle;font-size:11px;font-weight:900
+}
+.scene-phenol-bromine .reagent-bottle .bottle-sub{font-size:10px;font-weight:750}
+.scene-phenol-bromine .dropper{transform:none!important;opacity:0;transition:opacity .3s ease}
+.scene-phenol-bromine .dropper .dropper-bulb{
+ fill:#a55245;stroke:#71362f;stroke-width:3
+}
+.scene-phenol-bromine .dropper .dropper-neck{
+ fill:#b66f60;stroke:#71362f;stroke-width:3
+}
+.scene-phenol-bromine .dropper .dropper-barrel{
+ fill:rgba(250,255,253,.5);stroke:#819f9a;stroke-width:3;stroke-linejoin:round
+}
+.scene-phenol-bromine .dropper .dropper-tip{
+ fill:none;stroke:#819f9a;stroke-width:3;stroke-linecap:round
+}
+.scene-phenol-bromine .dropper .bromine-column{
+ fill:#a95d26;stroke:none;opacity:.92
+}
+.scene-phenol-bromine .bromine-drop{
+ fill:#a95d26!important;stroke:#743b17!important;stroke-width:1.5!important;opacity:0;
+ filter:drop-shadow(0 2px 2px rgba(113,55,14,.22))
+}
+.scene-phenol-bromine .contact-cloud{
+ fill:rgba(191,104,35,.4);stroke:#a35c25;stroke-width:1;opacity:0;
+ transform-origin:360px 238px
+}
+.scene-phenol-bromine .precipitate{opacity:0!important;transform:none!important;transition:opacity .65s ease}
+.scene-phenol-bromine .precipitate path{
+ fill:rgba(255,255,251,.98)!important;stroke:#aab5b0!important;stroke-width:1.25!important;
+ filter:drop-shadow(0 2px 1px rgba(64,84,77,.18))
+}
+.scene-phenol-bromine .settled-bed{
+ fill:rgba(255,255,251,.98);stroke:#aab5b0;stroke-width:1.4;opacity:0;
+ transition:opacity .7s ease
+}
+.scene-phenol-bromine.phase-bromine-drops .dropper{opacity:1}
+.scene-phenol-bromine.phase-bromine-drops .bromine-drop{opacity:1;animation:phenolRealDrop 1s ease-in 3}
+.scene-phenol-bromine.phase-bromine-drops .drop-two{animation-delay:.3s}
+.scene-phenol-bromine.phase-bromine-drops .contact-cloud{
+ opacity:1;animation:phenolContactPlume 1.45s ease-out infinite
+}
+.scene-phenol-bromine.phase-bromine-drops .phenol-liquid{
+ fill:rgba(244,228,194,.68)!important;animation:phenolRealFade 1.9s .35s ease-out both
+}
+.scene-phenol-bromine.phase-bromine-drops .precipitate{opacity:.24!important}
+.scene-phenol-bromine.phase-precipitate-growing .dropper,
+.scene-phenol-bromine.phase-precipitate-settled .dropper{opacity:0}
+.scene-phenol-bromine.phase-precipitate-growing .phenol-liquid,
+.scene-phenol-bromine.phase-precipitate-settled .phenol-liquid{fill:rgba(248,248,238,.88)!important}
+.scene-phenol-bromine.phase-precipitate-growing .precipitate{
+ opacity:.9!important;animation:phenolRealFloc 1.8s ease-in-out infinite alternate
+}
+.scene-phenol-bromine.phase-precipitate-settled .precipitate{opacity:1!important;transform:translateY(5px)!important}
+.scene-phenol-bromine.phase-precipitate-settled .settled-bed{opacity:1}
+@keyframes phenolRealDrop{
+ 0%{opacity:0;transform:translateY(-18px) scale(.78)}
+ 18%{opacity:1}82%{opacity:.95}
+ 100%{opacity:0;transform:translateY(34px) scale(.95)}
+}
+@keyframes phenolContactPlume{
+ 0%{transform:scale(.45);opacity:.75}100%{transform:scale(1.12);opacity:0}
+}
+@keyframes phenolRealFade{
+ 0%{fill:rgba(219,158,79,.5)}65%{fill:rgba(241,219,176,.42)}100%{fill:rgba(248,248,238,.86)}
+}
+@keyframes phenolRealFloc{to{transform:translateY(5px) translateX(1px)}}
+
+@media(max-width:520px){
+ .scene-phenol-bromine .dropper-label,
+ .scene-phenol-bromine .dropper .leader{display:none}
+ .scene-phenol-bromine .reagent-bottle .bottle-title{font-size:10px}
+ .scene-phenol-bromine .phenol-label{font-size:12px}
+}

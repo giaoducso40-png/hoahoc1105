@@ -118,3 +118,57 @@
 @media(prefers-reduced-motion:reduce){
  .lab-tollens .scene-tollens.phase-silver-growing .silver-seeds circle{animation:none}
 }
+
+/* V16 — Lab 4: dụng cụ đúng tỷ lệ, bể nước ấm và màng bạc phản quang. */
+.lab-tollens .scene-tollens .bench-shadow{fill:rgba(35,66,61,.15);filter:blur(8px)}
+.lab-tollens .scene-tollens .sample-rack{opacity:1;transition:opacity .3s ease}
+.lab-tollens .scene-tollens .sample-rack path{fill:none;stroke:#76718e!important;stroke-linecap:round;stroke-linejoin:round}
+.lab-tollens .scene-tollens .sample-rack .rack-base{stroke-width:8!important}
+.lab-tollens .scene-tollens .sample-rack .rack-frame{stroke-width:6!important}
+.lab-tollens .scene-tollens .sample-rack .rack-opening{fill:rgba(255,255,255,.46);stroke:#76718e;stroke-width:4}
+.lab-tollens .scene-tollens .tollens-tube .glass{fill:url(#tollensGlass)!important;stroke:#789b97!important;stroke-width:6!important}
+.lab-tollens .scene-tollens .glass-highlight{fill:none;stroke:rgba(255,255,255,.9);stroke-width:4;stroke-linecap:round}
+.lab-tollens .scene-tollens .sample-liquid{fill:rgba(225,241,241,.58)!important;stroke:rgba(112,160,158,.46)!important;stroke-width:1.5!important}
+.lab-tollens .scene-tollens .liquid-surface{fill:none;stroke:rgba(103,153,151,.48);stroke-width:2}
+.lab-tollens .scene-tollens .warm-bath{opacity:0;transition:opacity .35s ease}
+.lab-tollens .scene-tollens .warm-bath .glass{fill:rgba(255,255,255,.15)!important;stroke:#6f9995!important;stroke-width:5!important}
+.lab-tollens .scene-tollens .warm-bath .water{fill:url(#tollensWater)!important;stroke:#5ca3a4!important;stroke-width:2.5!important}
+.lab-tollens .scene-tollens .bath-highlight{fill:none;stroke:rgba(255,255,255,.75);stroke-width:5;stroke-linecap:round}
+.lab-tollens .scene-tollens .warm-wave{stroke:#e5964d!important;stroke-width:3!important}
+.lab-tollens .scene-tollens .tollens-droppers{opacity:0;transition:opacity .28s ease}
+.lab-tollens .scene-tollens .tollens-droppers .reagent-label{font-size:14px;fill:#345e57}
+.lab-tollens .scene-tollens .dropper-bulb{fill:#b8d6d2!important;stroke:#607f7b!important;stroke-width:2.5!important}
+.lab-tollens .scene-tollens .dropper-neck{fill:#d9e8e6!important;stroke:#6d8e89!important;stroke-width:2!important}
+.lab-tollens .scene-tollens .dropper-glass{fill:rgba(255,255,255,.58)!important;stroke:#72938f!important;stroke-width:2.5!important}
+.lab-tollens .scene-tollens .reagent-column{fill:#d9eeee;stroke:none!important}
+.lab-tollens .scene-tollens .reagent-drop{fill:#d8eeee!important;stroke:#6f9692!important;stroke-width:1.5!important}
+.lab-tollens .scene-tollens.phase-tollens-mixed .tollens-droppers{opacity:1}
+.lab-tollens .scene-tollens.phase-tollens-mixed .reagent-drop{animation:svgDrop 1s ease-in infinite}
+.lab-tollens .scene-tollens.phase-silver-growing .sample-rack,
+.lab-tollens .scene-tollens.phase-silver-complete .sample-rack{opacity:0}
+.lab-tollens .scene-tollens.phase-silver-growing .warm-bath,
+.lab-tollens .scene-tollens.phase-silver-complete .warm-bath{opacity:1}
+.lab-tollens .scene-tollens .silver-wall,
+.lab-tollens .scene-tollens .silver-bottom{fill:none;stroke:url(#silverMirror)!important;stroke-width:9!important;stroke-linecap:round;opacity:0;stroke-dasharray:220;stroke-dashoffset:220;filter:drop-shadow(0 0 3px rgba(255,255,255,.95)) drop-shadow(0 1px 2px rgba(58,73,78,.38))}
+.lab-tollens .scene-tollens.phase-silver-growing .silver-wall,
+.lab-tollens .scene-tollens.phase-silver-growing .silver-bottom{opacity:.72;stroke-dashoffset:82;transition:stroke-dashoffset 1.55s ease,opacity .4s ease}
+.lab-tollens .scene-tollens.phase-silver-complete .silver-wall,
+.lab-tollens .scene-tollens.phase-silver-complete .silver-bottom{opacity:1;stroke-dashoffset:0;transition:stroke-dashoffset 1.55s ease,opacity .4s ease}
+.lab-tollens .scene-tollens .mirror-glint{fill:none;stroke:#fff;stroke-width:3.5;stroke-linecap:round;opacity:0;filter:drop-shadow(0 0 3px #fff)}
+.lab-tollens .scene-tollens.phase-silver-growing .mirror-glint{opacity:.42}
+.lab-tollens .scene-tollens.phase-silver-complete .mirror-glint{opacity:.9;animation:tollensGlint 1.8s ease-in-out infinite alternate}
+.lab-tollens .scene-tollens .silver-seeds{opacity:0}
+.lab-tollens .scene-tollens .silver-seeds circle{fill:#dfe8ea!important;stroke:#7d9096!important;stroke-width:1.8!important}
+.lab-tollens .scene-tollens.phase-silver-growing .silver-seeds{opacity:1}
+.lab-tollens .scene-tollens.phase-silver-complete .silver-seeds{opacity:.26}
+.lab-tollens .scene-tollens .tube-b{filter:none!important}
+.lab-tollens .scene-tollens .tube-b .sample-liquid{fill:rgba(225,241,241,.58)!important}
+@keyframes tollensGlint{from{opacity:.38}to{opacity:1}}
+@media(max-width:520px){
+ .lab-tollens .scene-tollens .mq-diagram{inset:3% 1% 15%;width:98%;height:82%}
+ .lab-tollens .scene-tollens .tollens-droppers .reagent-label{font-size:13px}
+ .lab-tollens .scene-tollens .bath-label{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+ .lab-tollens .scene-tollens.phase-silver-complete .mirror-glint{animation:none}
+}

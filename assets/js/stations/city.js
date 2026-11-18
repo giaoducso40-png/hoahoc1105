@@ -2,6 +2,15 @@ import{TOPICS}from"../core/config.js";
 import{topicMetrics}from"../core/store.js";
 import{$,$$,esc}from"../core/ui.js";
 
+const CITY_CENTER={x:50,y:48.5};
+const CITY_ROUTES={
+ halogen:[{x:50,y:42},{x:42,y:37},{x:35.5,y:33.5}],
+ alcohol:[{x:50,y:42},{x:58,y:37},{x:64.5,y:33.5}],
+ phenol:[{x:45,y:48},{x:39,y:51},{x:32.5,y:53.5}],
+ carbonyl:[{x:55,y:48},{x:61,y:51},{x:67.5,y:53.5}],
+ acid:[{x:50,y:52},{x:50,y:57},{x:50,y:60}]
+};
+
 export async function render(ctx){
  const state=ctx.getState(),name=state.profile.name||"bạn";
  const weakest=Object.keys(TOPICS).map(k=>[k,topicMetrics(k)]).sort((a,b)=>(a[1].count? a[1].accuracy:-1)-(b[1].count?b[1].accuracy:-1))[0][0];
@@ -20,23 +29,44 @@ export async function render(ctx){
   <div class="travel-toast" id="travelToast" role="status"></div>
  </section>`;
  $$(".station-node").forEach(b=>b.onclick=()=>selectStation(ctx,b));
+ const map=$(".city-v4"),runner=$("#mapRunner");
+ runner.style.left=`${CITY_CENTER.x}%`;runner.style.top=`${CITY_CENTER.y}%`;
+  requestAnimationFrame(()=>{
+    if(ctx.root.scrollWidth<=ctx.root.clientWidth)return;
+    const mapCenter=map.offsetLeft+(map.offsetWidth/2);
+    ctx.root.scrollLeft=Math.max(0,mapCenter-(ctx.root.clientWidth/2));
+  });
 }
 
 function selectStation(ctx,button){
  const map=button.closest(".city-hero");
- if(button.classList.contains("selected")||map.dataset.travelling==="true")return;
+ const topic=button.dataset.topic,route=CITY_ROUTES[topic];
+ if(!route)return;
+ const token=(map._travelToken||0)+1;map._travelToken=token;
+ if(map._openTimer){clearTimeout(map._openTimer);map._openTimer=null}
+ if(map._travelAnimation){try{map._travelAnimation.commitStyles()}catch{}map._travelAnimation.cancel();map._travelAnimation=null}
  map.dataset.travelling="true";
  $$(".station-node").forEach(x=>x.classList.remove("selected"));button.classList.add("selected");
- const topic=button.dataset.topic,name=ctx.getState().profile.name||"Nhà thám hiểm",notice=$("#travelToast"),runner=$("#mapRunner");
- const mapBox=map.getBoundingClientRect(),target=button.getBoundingClientRect();
- const current=runner.getBoundingClientRect(),targetCenter=target.left+target.width/2,currentCenter=current.left+current.width/2;
- runner.dataset.direction=targetCenter<currentCenter?"left":"right";
- runner.style.setProperty("--runner-x",`${target.left-mapBox.left+target.width/2}px`);
- runner.style.setProperty("--runner-y",`${target.top-mapBox.top+target.height/2}px`);
- runner.dataset.target=topic;runner.classList.add("travelling");
+ const name=ctx.getState().profile.name||"Nhà thám hiểm",notice=$("#travelToast"),runner=$("#mapRunner"),mapBox=map.getBoundingClientRect(),currentBox=runner.getBoundingClientRect();
+ const current={x:(currentBox.left+currentBox.width/2-mapBox.left)/mapBox.width*100,y:(currentBox.top+currentBox.height/2-mapBox.top)/mapBox.height*100};
+ const points=[current];
+ if(Math.hypot(current.x-CITY_CENTER.x,current.y-CITY_CENTER.y)>4)points.push(CITY_CENTER);
+ route.forEach(point=>points.push(point));
+ const segments=points.slice(1).map((point,index)=>Math.hypot(point.x-points[index].x,point.y-points[index].y));
+ const total=Math.max(1,segments.reduce((sum,value)=>sum+value,0));let travelled=0;
+ const frames=points.map((point,index)=>{if(index){travelled+=segments[index-1]}return{left:`${point.x}%`,top:`${point.y}%`,offset:index?travelled/total:0}});
+ const next=points[1]||route.at(-1);runner.dataset.direction=next.x<current.x?"left":"right";
+ runner.dataset.target=topic;runner.classList.remove("arrived");runner.classList.add("travelling");
  notice.innerHTML=`Mol đang dẫn <b>${esc(name)}</b> tới ${TOPICS[topic].district}…`;notice.classList.add("show");
- setTimeout(()=>{notice.innerHTML=`Đã tới <b>${TOPICS[topic].district}</b>. Cửa trạm đang mở!`;runner.classList.add("arrived")},700);
- setTimeout(()=>{notice.classList.remove("show");button.classList.remove("selected");map.dataset.travelling="false";openStation(ctx,topic)},980);
+ const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches,duration=reduced?1:Math.min(1550,Math.max(950,total*34));
+ const animation=runner.animate(frames,{duration,easing:"cubic-bezier(.38,.08,.2,1)",fill:"forwards"});map._travelAnimation=animation;
+ animation.finished.then(()=>{
+  if(map._travelToken!==token)return;
+  const destination=route.at(-1);runner.style.left=`${destination.x}%`;runner.style.top=`${destination.y}%`;
+  animation.cancel();map._travelAnimation=null;runner.classList.remove("travelling");runner.classList.add("arrived");
+  notice.innerHTML=`Đã tới <b>${TOPICS[topic].district}</b>. Cửa trạm đang mở!`;
+  map._openTimer=setTimeout(()=>{if(map._travelToken!==token)return;notice.classList.remove("show");button.classList.remove("selected");map.dataset.travelling="false";openStation(ctx,topic)},reduced?1:320);
+ }).catch(()=>{});
 }
 
 function openStation(ctx,key){

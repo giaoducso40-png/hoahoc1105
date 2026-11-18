@@ -105,6 +105,7 @@
   transition:opacity .35s ease;
 }
 .lab-substitution .scene-substitution .gas-line{
+  d:path("M370 92V51h206v250q0 15 15 15h12");
   fill:none;
   stroke:#739b95;
   stroke-width:5;
@@ -133,6 +134,169 @@
 @keyframes substitutionWarmBath{to{fill:rgba(151,218,209,.53)}}
 .lab-substitution .scene-substitution .scene-art{display:none!important}
 .lab-substitution .scene-substitution .scene-effect{display:none!important}
+
+/* V13 — Lab 1: dụng cụ và hiện tượng gần với bố trí thực nghiệm hơn. */
+.lab-substitution .scene-substitution .water-bath .glass{
+  fill:rgba(246,254,252,.16);
+  stroke:#769b96;
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .water-bath .water{
+  fill:url(#subBath,rgba(177,222,217,.58));
+  stroke:#78b5ae;
+  stroke-width:2;
+}
+.lab-substitution .scene-substitution .bath-shine,
+.lab-substitution .scene-substitution .glass-highlight{
+  fill:none;
+  stroke:rgba(255,255,255,.9);
+  stroke-width:4;
+  stroke-linecap:round;
+}
+.lab-substitution .scene-substitution .warm-wave{
+  fill:none;
+  stroke:#e9a15d;
+  stroke-width:3;
+  stroke-linecap:round;
+  opacity:0;
+}
+.lab-substitution .scene-substitution .tube .glass{
+  fill:url(#subGlass,rgba(248,255,253,.3));
+  stroke:#789c98;
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .liquid-a{
+  fill:rgba(205,230,228,.86);
+  stroke:#91bbb5;
+  stroke-width:1.3;
+}
+.lab-substitution .scene-substitution .organic-layer{
+  fill:rgba(241,244,229,.8);
+  stroke:#c5c9ae;
+  stroke-width:1;
+}
+.lab-substitution .scene-substitution .phase-interface{
+  fill:none;
+  stroke:#759f99;
+  stroke-width:2;
+  opacity:.8;
+  transition:opacity .8s ease,filter .8s ease;
+}
+.lab-substitution .scene-substitution .liquid-b{
+  fill:rgba(236,239,214,.76);
+  stroke:#bdc49b;
+  stroke-width:1.2;
+}
+.lab-substitution .scene-substitution .rubber-stopper{
+  fill:#a68a69;
+  stroke:#6f5c49;
+  stroke-width:3;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .phase-note,
+.lab-substitution .scene-substitution .collector-label{
+  fill:#315b52;
+  font-size:11px;
+  font-weight:800;
+  text-anchor:middle;
+  paint-order:stroke;
+  stroke:rgba(255,255,255,.96);
+  stroke-width:4px;
+}
+.lab-substitution .scene-substitution .gas-line{
+  fill:none;
+  stroke:#6f8f8b;
+  stroke-width:6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .gas-flow,
+.lab-substitution .scene-substitution .gas-bubbles,
+.lab-substitution .scene-substitution .gas-pocket{
+  opacity:0;
+  transition:opacity .55s ease;
+}
+.lab-substitution .scene-substitution .gas-flow circle{
+  fill:#eaf8f5;
+  stroke:#318d7c;
+  stroke-width:2;
+}
+.lab-substitution .scene-substitution .trough-glass,
+.lab-substitution .scene-substitution .receiver-glass{
+  fill:rgba(248,255,253,.22);
+  stroke:#789c98;
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.lab-substitution .scene-substitution .receiver-glass{
+  d:path("M568 318V192q0-22 22-22h26q22 0 22 22v126");
+}
+.lab-substitution .scene-substitution .trough-water,
+.lab-substitution .scene-substitution .receiver-water{
+  fill:rgba(177,222,217,.66);
+  stroke:#82bbb4;
+  stroke-width:1.5;
+  transition:transform .8s ease;
+  transform-origin:603px 344px;
+}
+.lab-substitution .scene-substitution .receiver-water{transform:scaleY(3.05)}
+.lab-substitution .scene-substitution .gas-pocket{
+  fill:rgba(238,250,247,.5);
+  stroke:none;
+}
+.lab-substitution .scene-substitution .gas-bubbles circle{
+  fill:rgba(255,255,255,.8);
+  stroke:#318d7c;
+  stroke-width:2;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .warm-wave,
+.lab-substitution .scene-substitution.phase-branch-products .warm-wave{
+  opacity:1;
+  animation:substitutionHeatWave 1.1s ease-in-out infinite alternate;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-line,
+.lab-substitution .scene-substitution.phase-branch-products .gas-line{
+  stroke:#6f8f8b;
+  stroke-dasharray:none;
+  animation:none;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-flow,
+.lab-substitution .scene-substitution.phase-branches-heated .gas-bubbles,
+.lab-substitution .scene-substitution.phase-branches-heated .gas-pocket,
+.lab-substitution .scene-substitution.phase-branch-products .gas-flow,
+.lab-substitution .scene-substitution.phase-branch-products .gas-bubbles,
+.lab-substitution .scene-substitution.phase-branch-products .gas-pocket{opacity:1}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-flow circle,
+.lab-substitution .scene-substitution.phase-branch-products .gas-flow circle{
+  animation:substitutionGasPulse 1.15s ease-in-out infinite;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-flow circle:nth-child(2),
+.lab-substitution .scene-substitution.phase-branch-products .gas-flow circle:nth-child(2){animation-delay:-.28s}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-flow circle:nth-child(3),
+.lab-substitution .scene-substitution.phase-branch-products .gas-flow circle:nth-child(3){animation-delay:-.56s}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-flow circle:nth-child(4),
+.lab-substitution .scene-substitution.phase-branch-products .gas-flow circle:nth-child(4){animation-delay:-.84s}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-bubbles circle,
+.lab-substitution .scene-substitution.phase-branch-products .gas-bubbles circle{
+  animation:substitutionBubble 1.35s ease-in infinite;
+  transform-origin:center;
+}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-bubbles circle:nth-child(2),
+.lab-substitution .scene-substitution.phase-branch-products .gas-bubbles circle:nth-child(2){animation-delay:-.48s}
+.lab-substitution .scene-substitution.phase-branches-heated .gas-bubbles circle:nth-child(3),
+.lab-substitution .scene-substitution.phase-branch-products .gas-bubbles circle:nth-child(3){animation-delay:-.92s}
+.lab-substitution .scene-substitution.phase-branches-heated .receiver-water{transform:scaleY(1.75)}
+.lab-substitution .scene-substitution.phase-branch-products .receiver-water{transform:scaleY(1)}
+.lab-substitution .scene-substitution.phase-branches-heated .phase-interface{opacity:.45;filter:blur(.8px)}
+.lab-substitution .scene-substitution.phase-branch-products .phase-interface{opacity:.18}
+@keyframes substitutionHeatWave{to{transform:translateY(-5px);opacity:.5}}
+@keyframes substitutionGasPulse{50%{opacity:.28;transform:scale(.78)}}
+@keyframes substitutionBubble{0%{transform:translateY(10px);opacity:0}20%{opacity:1}100%{transform:translateY(-20px);opacity:0}}
 .lab-substitution .branch-compare{
   position:relative;
   z-index:2;

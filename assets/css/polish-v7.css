@@ -241,3 +241,132 @@
  .lab-stage{min-height:294px!important;height:294px}
  .lab-controls{grid-template-columns:82px minmax(0,1fr)}
 }
+
+/* V18 — Lab 6 only: realistic ester preparation and clear phase separation. */
+.scene-esterification::before,
+.scene-esterification::after{
+ content:none;
+ display:none;
+ position:absolute;
+ z-index:28;
+ box-sizing:border-box;
+ padding:7px 11px;
+ border:1px solid rgba(20,112,94,.2);
+ border-radius:10px;
+ background:rgba(255,255,255,.94);
+ box-shadow:0 7px 18px rgba(25,72,63,.12);
+ color:#195f50;
+ font:800 12px/1.3 "Segoe UI","Noto Sans","DejaVu Sans",Arial,sans-serif;
+ white-space:nowrap;
+ width:auto;
+ height:auto;
+ min-width:0;
+ left:auto;
+ right:auto;
+ top:auto;
+ bottom:auto;
+ transform:none;
+ opacity:1;
+ animation:none;
+ pointer-events:none;
+}
+
+.scene-esterification.phase-ester-mixing::before{
+ content:"Hỗn hợp gần như không màu";
+ display:block;
+ top:12px;
+ left:12px;
+}
+
+.scene-esterification.phase-ester-water-bath::before{
+ content:"Chỉ đun bể nước · không hơ trực tiếp ống nghiệm";
+ display:block;
+ top:12px;
+ left:12px;
+}
+
+.scene-esterification.phase-ester-brine-transfer::before{
+ content:"Đèn đã tắt · mẫu đã để nguội";
+ display:block;
+ top:12px;
+ left:12px;
+}
+
+/* Hạ và thu nhỏ đèn để ngọn lửa nằm dưới kiềng, tách khỏi chân giá và đáy bể. */
+.scene-esterification .ester-alcohol-lamp{
+ transform:translate(-82px,12px) scale(.58);
+ transform-origin:370px 411px;
+}
+.scene-esterification.phase-ester-water-bath .trivet path{stroke-dasharray:none}
+
+/* Dòng rót là một dòng chất lỏng liên tục, không mô phỏng bằng các đoạn khí. */
+.scene-esterification.phase-ester-brine-transfer .pour-stream{
+ stroke:#86b9ae;
+ stroke-width:6;
+ stroke-dasharray:none;
+ filter:drop-shadow(0 1px 2px rgba(54,124,109,.24));
+}
+.scene-esterification.phase-ester-brine-transfer .receiver-organic{fill:rgba(239,243,226,.55)}
+
+/* Ở kết quả cuối, chỉ giữ ống nhận và đưa chú thích ra ngoài dụng cụ. */
+.scene-esterification.phase-ester-two-layers .receiver-top-name,
+.scene-esterification.phase-ester-two-layers .receiver-bottom-name,
+.scene-esterification.phase-ester-two-layers .receiver-top-leader,
+.scene-esterification.phase-ester-two-layers .receiver-bottom-leader{display:none}
+.scene-esterification.phase-ester-two-layers .receiver-organic{
+ fill:rgba(246,246,226,.94);
+ stroke:rgba(137,134,87,.3);
+}
+.scene-esterification.phase-ester-two-layers .receiver-brine{
+ fill:rgba(190,226,226,.9);
+ stroke:rgba(61,129,126,.25);
+}
+.scene-esterification.phase-ester-two-layers .receiver-interface{
+ stroke:#29796d!important;
+ stroke-width:4!important;
+}
+.scene-esterification.phase-ester-two-layers::before,
+.scene-esterification.phase-ester-two-layers::after{
+ display:block;
+ left:8%;
+ right:auto;
+ min-width:190px;
+ text-align:left;
+}
+.scene-esterification.phase-ester-two-layers::before{
+ content:"Pha hữu cơ ở trên · ethyl ethanoate";
+ top:45%;
+ border-left:5px solid #d7d59b;
+}
+.scene-esterification.phase-ester-two-layers::after{
+ content:"Pha nước muối ở dưới";
+ top:61%;
+ border-left:5px solid #78bdb9;
+}
+
+@media(max-width:600px){
+ .scene-esterification::before,
+ .scene-esterification::after{
+  padding:5px 8px;
+  font-size:10px;
+ }
+ .scene-esterification.phase-ester-mixing::before,
+ .scene-esterification.phase-ester-water-bath::before,
+ .scene-esterification.phase-ester-brine-transfer::before{
+  display:none;
+ }
+ .scene-esterification.phase-ester-two-layers .receiver-tube{
+  transform:translate(-80px,6px) scale(1.2);
+ }
+ .scene-esterification.phase-ester-two-layers::before,
+ .scene-esterification.phase-ester-two-layers::after{
+  left:8px;
+  min-width:0;
+  width:198px;
+  font-size:9px;
+  white-space:nowrap;
+  transform:none;
+ }
+ .scene-esterification.phase-ester-two-layers::before{top:45%}
+ .scene-esterification.phase-ester-two-layers::after{top:62%}
+}
